@@ -1,0 +1,36 @@
+2025-02-16T02:19:13+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, bool given, called in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor-pro\core\utils.php on line 429 and defined in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\elements.php:70
+Stack trace:
+#0 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor-pro\core\utils.php(429): Elementor\Elements_Manager->create_element_instance(false)
+#1 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor-pro\modules\search\module.php(92): ElementorPro\Core\Utils::create_widget_instance_from_db('123', 'bf23fb7')
+#2 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor-pro\modules\search\module.php(79): ElementorPro\Modules\Search\Module->get_query_based_on_widget_props('bf23fb7-123')
+#3 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-hook.php(324): ElementorPro\Modules\Search\Module->set_query(Object(WP_Query))
+#4 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#6 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-query.php(1881): do_action_ref_array('pre_get_posts', Array)
+#7 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-query.php(3852): WP_Query->get_posts()
+#8 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp.php(696): WP_Query->query(Array)
+#9 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp.php(816): WP->query_posts()
+#10 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\functions.php(1336): WP->main('')
+#11 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-blog-header.php(16): wp()
+#12 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\index.php(17): require('C:\\Users\\micha\\...')
+#13 {main}
+  thrown in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\elements.php on line 70
+
+2025-02-16T02:19:20+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, bool given, called in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor-pro\core\utils.php on line 429 and defined in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\elements.php:70
+Stack trace:
+#0 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor-pro\core\utils.php(429): Elementor\Elements_Manager->create_element_instance(false)
+#1 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor-pro\modules\search\module.php(92): ElementorPro\Core\Utils::create_widget_instance_from_db('123', 'bf23fb7')
+#2 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor-pro\modules\search\module.php(79): ElementorPro\Modules\Search\Module->get_query_based_on_widget_props('bf23fb7-123')
+#3 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-hook.php(324): ElementorPro\Modules\Search\Module->set_query(Object(WP_Query))
+#4 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#6 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-query.php(1881): do_action_ref_array('pre_get_posts', Array)
+#7 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-query.php(3852): WP_Query->get_posts()
+#8 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp.php(696): WP_Query->query(Array)
+#9 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp.php(816): WP->query_posts()
+#10 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\functions.php(1336): WP->main('')
+#11 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-blog-header.php(16): wp()
+#12 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\index.php(17): require('C:\\Users\\micha\\...')
+#13 {main}
+  thrown in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\elements.php on line 70
+
