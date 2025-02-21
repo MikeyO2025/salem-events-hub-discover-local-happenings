@@ -108,3 +108,32 @@ Stack trace:
 [20-Feb-2025 19:34:35 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 196
 [20-Feb-2025 19:34:35 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 197
 [20-Feb-2025 19:34:39 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 197
+[21-Feb-2025 04:16:57 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:16:57 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:16:57 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:16:57 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:16:57 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:16:57 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:16:57 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:16:57 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:31:07 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:31:07 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:31:07 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:31:07 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:31:07 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:31:07 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:31:07 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 04:31:07 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 05:13:53 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 255
+[21-Feb-2025 05:13:56 UTC] [Image Optimizer]: error in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: Token Auth Guard Request Failed!: Invalid Token
+[21-Feb-2025 05:14:00 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 255
+[21-Feb-2025 05:26:21 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 259
+[21-Feb-2025 05:26:24 UTC] [Image Optimizer]: error in ImageOptimization\Modules\Optimization\Components\Upload_Optimization->optimize_image_on_upload(): Optimization error. Reason: Optimized image failed
+[21-Feb-2025 05:26:24 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 260
+[21-Feb-2025 05:26:32 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 260
+[21-Feb-2025 05:26:32 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 261
+[21-Feb-2025 05:26:40 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 261
+[21-Feb-2025 05:30:42 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 263
+[21-Feb-2025 05:30:49 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 263
+[21-Feb-2025 05:42:01 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 275
+[21-Feb-2025 05:42:16 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 275
