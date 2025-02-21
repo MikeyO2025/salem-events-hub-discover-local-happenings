@@ -137,3 +137,19 @@ Stack trace:
 [21-Feb-2025 05:30:49 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 263
 [21-Feb-2025 05:42:01 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 275
 [21-Feb-2025 05:42:16 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 275
+[21-Feb-2025 15:25:00 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[21-Feb-2025 15:25:00 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[21-Feb-2025 15:35:30 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 287
+[21-Feb-2025 15:35:48 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 287
+[21-Feb-2025 15:35:54 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 288
+[21-Feb-2025 15:36:11 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 288
+[21-Feb-2025 15:36:19 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 289
+[21-Feb-2025 15:36:34 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 289
+[21-Feb-2025 16:26:13 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 16:26:13 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 16:26:13 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 16:26:13 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 16:26:13 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 16:26:13 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 16:26:13 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[21-Feb-2025 16:26:13 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
