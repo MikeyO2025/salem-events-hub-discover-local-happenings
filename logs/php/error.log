@@ -182,3 +182,12 @@ Stack trace:
 [23-Feb-2025 03:25:48 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 369
 [23-Feb-2025 04:07:27 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 386
 [23-Feb-2025 04:07:42 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 386
+[24-Feb-2025 01:57:40 UTC] Cron reschedule event error for hook: shopmagic/core/cron/two_days, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"shopmagic\/core\/cron\/two_days","args":[],"interval":172800}
+[24-Feb-2025 02:33:00 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-customize-widgets.php on line 923
+[24-Feb-2025 02:40:16 UTC] [Image Optimizer]: error in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: Token Auth Guard Request Failed!: Invalid Token
+[24-Feb-2025 02:40:16 UTC] [Image Optimizer]: error in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: Token Auth Guard Request Failed!: Invalid Token
+[24-Feb-2025 02:41:25 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 422
+[24-Feb-2025 02:41:34 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 422
+[24-Feb-2025 02:42:04 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 423
+[24-Feb-2025 02:42:14 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 423
+[24-Feb-2025 03:00:06 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 424
