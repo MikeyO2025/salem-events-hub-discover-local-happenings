@@ -191,3 +191,4 @@ Stack trace:
 [24-Feb-2025 02:42:04 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 423
 [24-Feb-2025 02:42:14 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 423
 [24-Feb-2025 03:00:06 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 424
+[24-Feb-2025 20:12:49 UTC] PHP Warning:  Undefined array key "editor_post_id" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\modules\history\revisions-manager.php on line 363
