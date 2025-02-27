@@ -229,3 +229,17 @@ Stack trace:
 [25-Feb-2025 04:14:34 UTC] PHP Warning:  Undefined array key "mega-menu" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\modules\ai\connect\ai.php on line 776
 [25-Feb-2025 04:14:34 UTC] PHP Warning:  Undefined array key "mega-menu" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\modules\ai\connect\ai.php on line 776
 [25-Feb-2025 04:14:52 UTC] PHP Warning:  Undefined array key "mega-menu" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\modules\ai\connect\ai.php on line 776
+[27-Feb-2025 02:00:29 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 531
+[27-Feb-2025 02:00:37 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 531
+[27-Feb-2025 03:30:14 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 532
+[27-Feb-2025 03:30:22 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 532
+[27-Feb-2025 03:30:27 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 533
+[27-Feb-2025 03:30:32 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 533
+[27-Feb-2025 04:01:17 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 537
+[27-Feb-2025 04:01:26 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 537
+[27-Feb-2025 04:14:22 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 539
+[27-Feb-2025 04:14:26 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 539
+[27-Feb-2025 04:23:31 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 540
+[27-Feb-2025 04:23:40 UTC] [Image Optimizer]: error in ImageOptimization\Modules\Optimization\Components\Upload_Optimization->optimize_image_on_upload(): Optimization error. Reason: Optimized image failed
+[27-Feb-2025 04:23:45 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 541
+[27-Feb-2025 04:23:51 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 541
