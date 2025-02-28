@@ -243,3 +243,56 @@ Stack trace:
 [27-Feb-2025 04:23:40 UTC] [Image Optimizer]: error in ImageOptimization\Modules\Optimization\Components\Upload_Optimization->optimize_image_on_upload(): Optimization error. Reason: Optimized image failed
 [27-Feb-2025 04:23:45 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 541
 [27-Feb-2025 04:23:51 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 541
+[28-Feb-2025 02:55:26 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 604
+[28-Feb-2025 02:55:40 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 604
+[28-Feb-2025 02:58:09 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1282
+[28-Feb-2025 02:58:09 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1282
+[28-Feb-2025 02:59:05 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1282
+[28-Feb-2025 02:59:05 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1282
+[28-Feb-2025 03:49:02 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[28-Feb-2025 03:49:02 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[28-Feb-2025 03:49:02 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[28-Feb-2025 03:49:02 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[28-Feb-2025 03:49:02 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[28-Feb-2025 03:49:02 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[28-Feb-2025 03:49:02 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[28-Feb-2025 03:49:02 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\includes\managers\image.php on line 113
+[28-Feb-2025 03:49:53 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 607
+[28-Feb-2025 03:49:59 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 607
+[28-Feb-2025 03:49:59 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 608
+[28-Feb-2025 03:50:07 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 608
+[28-Feb-2025 03:50:15 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 609
+[28-Feb-2025 03:50:22 UTC] [Image Optimizer]: error in ImageOptimization\Modules\Optimization\Components\Upload_Optimization->optimize_image_on_upload(): Optimization error. Reason: Optimized image failed
+[28-Feb-2025 03:50:58 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 610
+[28-Feb-2025 03:51:06 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 610
+[28-Feb-2025 03:51:12 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 611
+[28-Feb-2025 03:51:20 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 611
+[28-Feb-2025 03:52:11 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 612
+[28-Feb-2025 03:52:19 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 612
+[28-Feb-2025 03:53:05 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 613
+[28-Feb-2025 03:53:10 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 613
+[28-Feb-2025 03:53:10 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 614
+[28-Feb-2025 03:53:19 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 614
+[28-Feb-2025 03:53:46 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 615
+[28-Feb-2025 03:53:51 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 615
+[28-Feb-2025 03:53:51 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 616
+[28-Feb-2025 03:53:59 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 616
+[28-Feb-2025 03:54:05 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 617
+[28-Feb-2025 03:54:10 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 617
+[28-Feb-2025 03:54:10 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 618
+[28-Feb-2025 03:54:18 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 618
+[28-Feb-2025 03:54:24 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 619
+[28-Feb-2025 03:54:29 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 619
+[28-Feb-2025 03:54:29 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 620
+[28-Feb-2025 03:54:37 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 620
+[28-Feb-2025 03:54:43 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 621
+[28-Feb-2025 03:55:01 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 621
+[28-Feb-2025 03:55:07 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 622
+[28-Feb-2025 03:55:21 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 622
+[28-Feb-2025 03:55:26 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 623
+[28-Feb-2025 03:55:39 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 629
+[28-Feb-2025 03:55:41 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 632
+[28-Feb-2025 04:41:51 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1282
+[28-Feb-2025 04:41:51 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1282
+[28-Feb-2025 04:45:15 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1282
+[28-Feb-2025 04:45:15 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1282
