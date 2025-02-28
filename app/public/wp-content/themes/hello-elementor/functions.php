@@ -281,3 +281,84 @@ function hello_elementor_get_theme_notifications(): ThemeNotifications {
 }
 
 hello_elementor_get_theme_notifications();
+
+////How to Add Events as a Custom Post Type new ish 2 28 25
+function create_event_post_type() {
+    register_post_type('event',
+        array(
+            'labels' => array(
+                'name' => __('Events'),
+                'singular_name' => __('Event')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
+            'menu_icon' => 'dashicons-calendar'
+        )
+    );
+}
+add_action('init', 'create_event_post_type');
+
+
+
+// Displaying Events in Elementor adding to php
+function display_events() {
+    $args = array(
+        'post_type' => 'event',
+        'posts_per_page' => 10
+    );
+    $query = new WP_Query($args);
+    
+    $output = "<div class='event-list'>";
+    while ($query->have_posts()) {
+        $query->the_post();
+        $output .= "<div class='event'>";
+        $output .= "<h3>" . get_the_title() . "</h3>";
+        $output .= "<p>" . get_the_content() . "</p>";
+        $output .= "</div>";
+    }
+    $output .= "</div>";
+
+    wp_reset_postdata();
+    return $output;
+}
+add_shortcode('show_events', 'display_events');
+
+//Process the form using functions.php
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['user_email'])) {
+    global $wpdb;
+    $user_email = sanitize_email($_POST['user_email']);
+    $evt_id = intval($_POST['evt_id']);
+
+    $user = $wpdb->get_row($wpdb->prepare("SELECT ID FROM wp_users WHERE user_email = %s", $user_email));
+
+    if ($user) {
+        $wpdb->insert('wp_event_registrations', [
+            'USER_ID' => $user->ID,
+            'EVT_ID' => $evt_id,
+            'REG_Date' => current_time('mysql')
+        ]);
+        echo "Registered successfully!";
+    } else {
+        echo "User not found.";
+    }
+}
+
+
+// Use WP Mail dont have yet
+//function send_event_notification($post_ID) {
+    //global $wpdb;
+
+    //$event_title = get_the_title($post_ID);
+    //$users = $wpdb->get_results("SELECT user_email FROM wp_users");
+
+    //foreach ($users as $user) {
+        //$to = $user->user_email;
+        //$subject = "New Event: " . $event_title;
+        //$message = "A new event has been added: " . get_permalink($post_ID);
+        //wp_mail($to, $subject, $message);
+    //}
+//}
+//add_action('publish_event', 'send_event_notification');
+
+
