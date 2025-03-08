@@ -331,3 +331,5 @@ Stack trace:
 [28-Feb-2025 19:09:20 UTC] PHP Warning:  Undefined variable $post_ID in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor\functions.php on line 359
 [28-Feb-2025 19:09:20 UTC] PHP Warning:  Undefined variable $post_ID in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor\functions.php on line 359
 [28-Feb-2025 19:09:20 UTC] PHP Warning:  Undefined variable $post_ID in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor\functions.php on line 359
+[07-Mar-2025 02:31:44 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1282
+[07-Mar-2025 02:31:44 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1282
