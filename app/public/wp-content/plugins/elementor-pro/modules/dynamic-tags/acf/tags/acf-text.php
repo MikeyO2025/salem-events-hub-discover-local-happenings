@@ -76,6 +76,9 @@ class ACF_Text extends Tag {
 					$meta = $this->get_queried_object_meta( $meta_key );
 					$value = isset( $meta['address'] ) ? $meta['address'] : '';
 					break;
+				case 'true_false':
+					$value = (string) $value;
+					break;
 			} // End switch().
 		} else {
 			// Field settings has been deleted or not available.
@@ -84,7 +87,7 @@ class ACF_Text extends Tag {
 
 		if ( ! is_string( $value ) ) {
 			$type = gettype( $value );
-			wp_trigger_error( 'acf-text', "ACF Text Field value must be string, but is type of: $type", E_CORE_WARNING );
+			wp_trigger_error( 'acf-text', "ACF Text Field value must be string, but is type of: $type", E_USER_WARNING );
 		} else {
 			echo wp_kses_post( $value );
 		}

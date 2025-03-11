@@ -150,10 +150,10 @@
 }
 
 .user-registration-error {
-	border-top-color: $red !important;
-	background: rgba($red, 0.1) !important;
-	color: darken($red, 15%) !important;
-	
+	border-top-color: $red;
+	background: rgba($red, 0.1);
+	color: darken($red, 15%);
+
 	&::before {
 		content: "\f534";
 	}
@@ -2684,6 +2684,15 @@ body {
 					}
 				}
 			}
+		}
+	}
+}
+
+body.user-registration-page {
+	.elementor-widget-container {
+		.user-registration:not(.user-registration-MyAccount) {
+			background: transparent;
+			border-radius: 0;
 		}
 	}
 }

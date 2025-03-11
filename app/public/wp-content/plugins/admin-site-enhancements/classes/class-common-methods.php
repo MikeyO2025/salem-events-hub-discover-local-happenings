@@ -52,8 +52,8 @@ class Common_Methods {
             } else {
                 switch ( $return_type ) {
                     case 'ip':
-                        if ( $this->is_ip_valid( trim( $ip_list[0] ) ) ) {
-                            return sanitize_text_field( $ip_list[0] );
+                        if ( $this->is_ip_valid( trim( $_SERVER[$ip_address_header] ) ) ) {
+                            return sanitize_text_field( $_SERVER[$ip_address_header] );
                         } else {
                             return '0.0.0.0';
                             // placeholder IP address
@@ -96,9 +96,13 @@ class Common_Methods {
             return false;
         }
         // Ref: https://www.php.net/manual/en/filter.filters.validate.php
-        if ( false == filter_var( $ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 ) ) {
+        // Ref: https://www.php.net/manual/en/filter.constants.php#constant.filter-validate-ip
+        // No need to specify which IP type to filter/check, e.g. filter_var( $ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 )
+        // This should check for both IPv4 and IPv6 addresses
+        if ( false === filter_var( $ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 ) && false === filter_var( $ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6 ) ) {
             return false;
-        } else {
+        }
+        if ( false !== filter_var( $ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 ) || false !== filter_var( $ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6 ) ) {
             return true;
         }
     }
@@ -409,6 +413,36 @@ class Common_Methods {
         // return $rgb;
         // Return rgb(255,255,255) or rgba(255,255,255,.5)
         return implode( array_keys( $rgb ) ) . '(' . implode( ', ', $rgb ) . ')';
+    }
+
+    /**
+     * Increases or decreases the brightness of a color by a percentage of the current brightness.
+     *
+     * @param   string  $hex        Supported formats: `#FFF`, `#FFFFFF`, `FFF`, `FFFFFF`
+     * @param   float   $adjustment_percentage  A number between -1 and 1. E.g. 0.3 = 30% lighter; -0.4 = 40% darker.
+     *
+     * @return  string
+     *
+     * @link 	https://stackoverflow.com/a/54393956
+     * @author  maliayas
+     */
+    function adjust_bnrightness( $hex, $adjustment_percentage ) {
+        $hex = ltrim( $hex, '#' );
+        if ( strlen( $hex ) == 3 ) {
+            $hex = $hex[0] . $hex[0] . $hex[1] . $hex[1] . $hex[2] . $hex[2];
+        }
+        $hex = array_map( 'hexdec', str_split( $hex, 2 ) );
+        foreach ( $hex as &$color ) {
+            $adjustableLimit = ( $adjustment_percentage < 0 ? $color : 255 - $color );
+            $adjustAmount = ceil( $adjustableLimit * $adjustment_percentage );
+            $color = str_pad(
+                dechex( $color + $adjustAmount ),
+                2,
+                '0',
+                STR_PAD_LEFT
+            );
+        }
+        return '#' . implode( $hex );
     }
 
     /**
