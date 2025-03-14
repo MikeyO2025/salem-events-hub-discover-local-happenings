@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: calendar, event, events, organizer, tickets
 Requires at least: 5.4.1
 Tested up to: 6.6.2
-Stable Tag: 3.1.46
+Stable Tag: 3.1.47
 Requires PHP: 5.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -339,6 +339,28 @@ WordPress does not have a built-in event calendar. However, if you want to add a
 
 
 == Changelog ==
+
+= [3.1.47] 12-03-2025 =
+
+Fixed : At Back-end side, event status update issue is resolved.
+Fixed : Some css and HTML twicks.
+Fixed : Translation issue is fixed.
+Fixed : Date and time separator symbol is available.
+Fixed : General setting tab data is saved properly.
+Fixed : At Back-end side, Event location name is now saved.
+Fixed : Event timezone selection is now working properly.
+Fixed : When hide date for guest user option is uncheck then fields are still hide.
+Fixed : Tab group is only available for events fields.
+Fixed : Expiry date field move to Date and time section.
+Fixed : A line is shown below filter is fixed.
+Added : Filter option settings is added in the event listing tab.
+Added : Related events can now be hidden as per users' wish.
+Added : Now specific organizer data can be hidden from the guest users.
+Added : The UI of the installation setup wizard is changed.
+Added : Admin UI for Add Event is changed.
+Added : The UI of the Event listing filter at front-side is changed.
+Added : The feature to add "Health Guidelines" in Post an Event form is added.
+Added : A new setting option is added to determine who can submit events based on user role in "Event Submission" tab
 
 = [3.1.46] 21-01-2025 =
 
