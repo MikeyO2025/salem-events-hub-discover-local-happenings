@@ -378,3 +378,5 @@ Stack trace:
 [15-Mar-2025 19:40:10 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
 [15-Mar-2025 19:40:11 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
 [15-Mar-2025 19:50:11 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 712
+[18-Mar-2025 03:27:39 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 714
+[18-Mar-2025 03:44:40 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 716
