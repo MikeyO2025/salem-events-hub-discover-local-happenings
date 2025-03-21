@@ -387,3 +387,4 @@ Stack trace:
 [21-Mar-2025 03:54:40 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 736
 [21-Mar-2025 04:04:42 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 738
 [21-Mar-2025 04:11:53 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 740
+[21-Mar-2025 20:34:07 UTC] Invalid trp_settings: "not_set"
