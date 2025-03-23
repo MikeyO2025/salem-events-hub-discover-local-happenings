@@ -361,4 +361,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['user_email'])) {
 //}
 //add_action('publish_event', 'send_event_notification');
 
-
