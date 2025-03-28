@@ -633,3 +633,19 @@ Stack trace:
 [27-Mar-2025 23:19:02 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
 [27-Mar-2025 23:19:02 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
 [27-Mar-2025 23:19:02 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[28-Mar-2025 03:35:53 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 926
+[28-Mar-2025 03:56:54 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 928
+[28-Mar-2025 04:32:13 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 930
+[28-Mar-2025 04:38:45 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 932
+[28-Mar-2025 04:41:47 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 934
+[28-Mar-2025 04:48:22 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 936
+[28-Mar-2025 04:53:50 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 938
+[28-Mar-2025 05:00:51 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 940
+[28-Mar-2025 05:04:22 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 942
+[28-Mar-2025 05:09:47 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 944
+[28-Mar-2025 05:13:44 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[28-Mar-2025 05:13:44 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[28-Mar-2025 05:13:44 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[28-Mar-2025 05:16:36 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[28-Mar-2025 05:16:36 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[28-Mar-2025 05:16:37 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
