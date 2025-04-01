@@ -73,30 +73,50 @@ add_action('wp_ajax_nopriv_get_calendar_events', 'get_calendar_events');
 
 if (!function_exists('get_calendar_events')) {
     function get_calendar_events() {
-        $events = [];
-
-        $args = array(
+        $args = [
             'post_type' => 'event_listing',
             'post_status' => 'publish',
             'posts_per_page' => -1,
-        );
+        ];
+
+        $tax_query = [];
+
+        // Apply filters only if they're present
+        if (!empty($_POST['event_type'])) {
+            $tax_query[] = [
+                'taxonomy' => 'event_listing_type',
+                'field' => 'slug',
+                'terms' => sanitize_text_field($_POST['event_type']),
+            ];
+        }
+
+        if (!empty($_POST['event_category'])) {
+            $tax_query[] = [
+                'taxonomy' => 'event_listing_category',
+                'field' => 'slug',
+                'terms' => sanitize_text_field($_POST['event_category']),
+            ];
+        }
+
+        // If we have filters, add to args
+        if (!empty($tax_query)) {
+            $args['tax_query'] = $tax_query;
+        }
+
         $query = new WP_Query($args);
+        $events = [];
 
         while ($query->have_posts()) {
             $query->the_post();
-            $event_id = get_the_ID();
 
-            $start_date = get_post_meta($event_id, '_event_start_date', true);
-            $end_date   = get_post_meta($event_id, '_event_end_date', true);
-
-            $start = date('c', strtotime($start_date));
-            $end = $end_date ? date('c', strtotime($end_date)) : $start;
+            $start = get_post_meta(get_the_ID(), '_event_start_date', true);
+            $end   = get_post_meta(get_the_ID(), '_event_end_date', true);
 
             $events[] = [
                 'title' => get_the_title(),
                 'start' => $start,
                 'end'   => $end,
-                'url'   => get_permalink($event_id),
+                'url'   => get_permalink(),
             ];
         }
 
@@ -104,6 +124,27 @@ if (!function_exists('get_calendar_events')) {
         wp_send_json($events);
     }
 }
+
+
+//new ish 3 31 Enable custom event taxonomies for REST API
+function expose_event_taxonomies_to_rest() {
+    register_taxonomy('event_type', 'event_listing', [
+        'label' => 'Event Types',
+        'public' => true,
+        'rewrite' => ['slug' => 'event_type'],
+        'hierarchical' => false,
+        'show_in_rest' => true,
+    ]);
+
+    register_taxonomy('event_category', 'event_listing', [
+        'label' => 'Event Categories',
+        'public' => true,
+        'rewrite' => ['slug' => 'event_category'],
+        'hierarchical' => true,
+        'show_in_rest' => true,
+    ]);
+}
+add_action('init', 'expose_event_taxonomies_to_rest');
 
 
 ?>

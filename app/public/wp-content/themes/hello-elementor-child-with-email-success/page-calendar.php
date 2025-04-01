@@ -1,0 +1,125 @@
+<?php
+/**
+ * Template Name: FullCalendar Page
+ */
+
+get_header();
+?>
+
+<div class="calendar-wrapper" style="max-width: 1200px; margin: 2rem auto;">
+  <div style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+    <select id="eventTypeFilter">
+      <option value="">All Event Types</option>
+    </select>
+    <select id="eventCategoryFilter">
+      <option value="">All Categories</option>
+    </select>
+  </div>
+  <div id="event-calendar"></div>
+</div>
+
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const calendarEl = document.getElementById('event-calendar');
+  const eventTypeFilter = document.getElementById('eventTypeFilter');
+  const eventCategoryFilter = document.getElementById('eventCategoryFilter');
+  let allEvents = [];
+
+  const calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    height: 'auto',
+    contentHeight: 800,
+    aspectRatio: 1.5,
+    headerToolbar: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'dayGridMonth,timeGridWeek,listWeek'
+    },
+    eventClick: function(info) {
+      info.jsEvent.preventDefault();
+      if (info.event.url) {
+        window.open(info.event.url, '_blank');
+      }
+    },
+    events: function(fetchInfo, successCallback, failureCallback) {
+      fetch('/wp-admin/admin-ajax.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'action=get_calendar_events'
+      })
+      .then(res => res.json())
+      .then(data => {
+        allEvents = data;
+        populateFilters(data);
+        successCallback(data);
+      })
+      .catch(err => failureCallback(err));
+    }
+  });
+
+  function populateFilters(events) {
+    const types = new Set();
+    const categories = new Set();
+    events.forEach(e => {
+      if (e.type) types.add(e.type);
+      if (e.category) categories.add(e.category);
+    });
+
+    types.forEach(t => {
+      const opt = document.createElement('option');
+      opt.value = t;
+      opt.textContent = t;
+      eventTypeFilter.appendChild(opt);
+    });
+
+    categories.forEach(c => {
+      const opt = document.createElement('option');
+      opt.value = c;
+      opt.textContent = c;
+      eventCategoryFilter.appendChild(opt);
+    });
+  }
+
+  function filterCalendar() {
+    const typeVal = eventTypeFilter.value;
+    const catVal = eventCategoryFilter.value;
+
+    const filtered = allEvents.filter(e => {
+      const typeMatch = typeVal === "" || e.type === typeVal;
+      const catMatch = catVal === "" || e.category === catVal;
+      return typeMatch && catMatch;
+    });
+
+    calendar.removeAllEvents();
+    calendar.addEventSource(filtered);
+  }
+
+  eventTypeFilter.addEventListener('change', filterCalendar);
+  eventCategoryFilter.addEventListener('change', filterCalendar);
+
+  calendar.render();
+});
+</script>
+
+<style>
+  #event-calendar .fc-event {
+    font-size: 14px;
+    padding: 4px 6px;
+    white-space: normal !important;
+    word-break: break-word;
+    line-height: 1.3;
+    border-radius: 6px;
+  }
+  #event-calendar .fc-daygrid-day-frame {
+    border: 1px solid #eee;
+    padding: 4px;
+  }
+  #event-calendar .fc-toolbar-title {
+    font-size: 24px;
+  }
+</style>
+
+<?php get_footer(); ?>

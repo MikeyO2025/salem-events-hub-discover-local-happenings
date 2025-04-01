@@ -48,3 +48,23 @@
 
 2025-03-29T22:25:21+00:00 CRITICAL Unmatched '}' in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 131
 
+2025-03-31T21:48:51+00:00 CRITICAL Cannot redeclare load_fullcalendar_assets() (previously declared in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php:65) in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 116
+
+2025-03-31T21:48:51+00:00 CRITICAL Cannot redeclare load_fullcalendar_assets() (previously declared in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php:65) in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 116
+
+2025-03-31T21:50:39+00:00 CRITICAL Cannot redeclare load_fullcalendar_assets() (previously declared in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php:65) in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 111
+
+2025-03-31T21:50:39+00:00 CRITICAL Cannot redeclare load_fullcalendar_assets() (previously declared in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php:65) in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 111
+
+2025-03-31T21:50:40+00:00 CRITICAL Cannot redeclare load_fullcalendar_assets() (previously declared in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php:65) in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 111
+
+2025-03-31T21:50:40+00:00 CRITICAL Cannot redeclare load_fullcalendar_assets() (previously declared in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php:65) in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 111
+
+2025-03-31T21:50:40+00:00 CRITICAL Cannot redeclare load_fullcalendar_assets() (previously declared in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php:65) in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 111
+
+2025-03-31T21:50:41+00:00 CRITICAL Cannot redeclare load_fullcalendar_assets() (previously declared in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php:65) in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 111
+
+2025-03-31T21:50:41+00:00 CRITICAL Cannot redeclare load_fullcalendar_assets() (previously declared in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php:65) in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 111
+
+2025-03-31T21:50:41+00:00 CRITICAL Cannot redeclare load_fullcalendar_assets() (previously declared in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php:65) in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 111
+
