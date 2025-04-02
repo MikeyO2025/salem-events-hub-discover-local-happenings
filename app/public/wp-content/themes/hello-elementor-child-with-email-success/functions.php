@@ -25,28 +25,74 @@ function handle_custom_event_registration() {
         wp_die('Invalid form data.');
     }
 
+    //$name = sanitize_text_field($_POST['reg_name']);
+    //$email = sanitize_email($_POST['reg_email']);
+    //$event_id = intval($_POST['event_id']);
+
+    //global $wpdb;
+    //$table = $wpdb->prefix . 'event_custom_registrations';
+
+    //$wpdb->query(
+        //"CREATE TABLE IF NOT EXISTS $table (
+            //id BIGINT AUTO_INCREMENT PRIMARY KEY,
+            //event_id BIGINT,
+            //name VARCHAR(255),
+            //email VARCHAR(255),
+            //created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        //)"
+    //);
+
+    //$wpdb->insert($table, [
+        //'event_id' => $event_id,
+        //'name' => $name,
+        //'email' => $email,
+        //'event_title' => $event_title,
+    //]);
+
+
+
+
+
+
+
     $name = sanitize_text_field($_POST['reg_name']);
-    $email = sanitize_email($_POST['reg_email']);
-    $event_id = intval($_POST['event_id']);
+$email = sanitize_email($_POST['reg_email']);
+$event_id = intval($_POST['event_id']);
 
-    global $wpdb;
-    $table = $wpdb->prefix . 'event_custom_registrations';
+//Fetch the event title
+$post = get_post($event_id);
+$event_title = $post ? $post->post_title : 'Unknown Event';
 
-    $wpdb->query(
-        "CREATE TABLE IF NOT EXISTS $table (
-            id BIGINT AUTO_INCREMENT PRIMARY KEY,
-            event_id BIGINT,
-            name VARCHAR(255),
-            email VARCHAR(255),
-            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-        )"
-    );
+global $wpdb;
+$table = $wpdb->prefix . 'event_custom_registrations';
 
-    $wpdb->insert($table, [
-        'event_id' => $event_id,
-        'name' => $name,
-        'email' => $email,
-    ]);
+$wpdb->query(
+    "CREATE TABLE IF NOT EXISTS $table (
+        id BIGINT AUTO_INCREMENT PRIMARY KEY,
+        event_id BIGINT,
+        name VARCHAR(255),
+        email VARCHAR(255),
+        event_title VARCHAR(255),
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    )"
+);
+
+//Insert data including event_title
+$wpdb->insert($table, [
+    'event_id' => $event_id,
+    'name' => $name,
+    'email' => $email,
+    'event_title' => $event_title,
+    'created_at' => current_time('mysql')
+]);
+
+
+
+   
+      
+
+
+
 
     // Send confirmation email
     $subject = 'Your Event Registration was Successful!';
