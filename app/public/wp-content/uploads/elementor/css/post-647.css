@@ -1,40 +1,97 @@
-.elementor-647 .elementor-element.elementor-element-3fd76e5{--display:flex;}.elementor-647 .elementor-element.elementor-element-8ea0215{--display:flex;}.elementor-647 .elementor-element.elementor-element-5b2c81d > .elementor-widget-container{margin:0px 0px 0px 0px;}.elementor-647 .elementor-element.elementor-element-cde4285{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-647 .elementor-element.elementor-element-a167f38{--display:flex;}.elementor-647 .elementor-element.elementor-element-3203a0f{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;}.elementor-647 .elementor-element.elementor-element-3203a0f > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;border-radius:0px 0px 0px 0px;}.elementor-647 .elementor-element.elementor-element-3203a0f.elementor-element{--flex-grow:0;--flex-shrink:0;}.elementor-647 .elementor-element.elementor-element-6d28657{--display:flex;}.elementor-647 .elementor-element.elementor-element-d20aa9f{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;}.elementor-647 .elementor-element.elementor-element-d20aa9f > .elementor-widget-container{margin:0px -178px 0px -309px;padding:0px 0px 0px 0px;}.elementor-647 .elementor-element.elementor-element-d20aa9f.elementor-element{--flex-grow:0;--flex-shrink:0;}.elementor-647 .elementor-element.elementor-element-00e7d7a{--display:flex;}/* Start custom CSS for html, class: .elementor-element-5b2c81d *//* Fix block height and spacing */
+.elementor-647 .elementor-element.elementor-element-3fd76e5{--display:flex;}.elementor-647 .elementor-element.elementor-element-b76f388{--display:flex;}.elementor-647 .elementor-element.elementor-element-8ea0215{--display:flex;}.elementor-647 .elementor-element.elementor-element-5b2c81d > .elementor-widget-container{margin:0px 0px 0px 0px;}.elementor-647 .elementor-element.elementor-element-cde4285{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-647 .elementor-element.elementor-element-a167f38{--display:flex;}.elementor-647 .elementor-element.elementor-element-3203a0f{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;}.elementor-647 .elementor-element.elementor-element-3203a0f > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;border-radius:0px 0px 0px 0px;}.elementor-647 .elementor-element.elementor-element-3203a0f.elementor-element{--flex-grow:0;--flex-shrink:0;}.elementor-647 .elementor-element.elementor-element-6d28657{--display:flex;}.elementor-647 .elementor-element.elementor-element-d20aa9f{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;}.elementor-647 .elementor-element.elementor-element-d20aa9f > .elementor-widget-container{margin:0px -178px 0px -309px;padding:0px 0px 0px 0px;}.elementor-647 .elementor-element.elementor-element-d20aa9f.elementor-element{--flex-grow:0;--flex-shrink:0;}.elementor-647 .elementor-element.elementor-element-00e7d7a{--display:flex;}/* Start custom CSS for html, class: .elementor-element-5b2c81d *//* 🎨 FullCalendar Custom Styling */
+
+/* Event block layout */
 #event-calendar .fc-event {
   background-color: #3366cc !important;
   border: none;
   border-radius: 8px;
-  padding: 2px 6px;
-  font-size: 13px;
-  line-height: 1.4;
-  white-space: normal !important;
-  word-break: break-word;
+  padding: 4px 6px;
+  margin-bottom: 3px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Hover effect */
 #event-calendar .fc-event:hover {
   background-color: #254ba3 !important;
+  transform: scale(1.02);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-/* Remove all caps on days */
-#event-calendar .fc-daygrid-day-number {
-  text-transform: none;
-  font-weight: 500;
+/* Time (above title) */
+#event-calendar .fc-event-time {
+  display: block;
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffd700 !important;
+  margin-bottom: 2px;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.2;
 }
 
-/* Calendar title styling */
+/* Event title */
+#event-calendar .fc-event-title {
+  white-space: normal !important;
+  word-break: break-word;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff !important;
+  padding: 0 4px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* FullCalendar Day Cell */
+#event-calendar .fc-daygrid-day-frame {
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Day numbers */
+#event-calendar .fc-daygrid-day-number {
+  text-transform: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 4px;
+  color: #333;
+}
+
+/* Today highlight */
+#event-calendar .fc-day-today {
+  background-color: #fff7e6;
+}
+
+/* Subtle day hover */
+#event-calendar .fc-daygrid-day:hover {
+  background-color: #f9f9f9;
+}
+
+/* Weekend background */
+#event-calendar .fc-day-sat,
+#event-calendar .fc-day-sun {
+  background-color: #fafafa;
+}
+
+/* Calendar toolbar */
 #event-calendar .fc-toolbar-title {
   font-size: 22px;
   font-weight: bold;
   color: #111;
 }
 
-/* Buttons */
 #event-calendar .fc-button {
   background: #f4f4f4;
   color: #333;
   border: 1px solid #ddd;
   font-size: 14px;
+  border-radius: 6px;
   transition: all 0.2s ease;
 }
 
@@ -43,46 +100,26 @@
   color: #000;
 }
 
-/* Today highlight */
-#event-calendar .fc-day-today {
-  background-color: #fff7e6;
+#event-calendar .fc-button-group .fc-button {
+  border-radius: 6px;
 }
 
-/* Week view cleanup (optional) */
+/* Time labels in week view */
 #event-calendar .fc-timegrid-slot-label {
   font-size: 12px;
   color: #555;
 }
 
-/* 🧱 Add light borders between days */
-#event-calendar .fc-daygrid-day-frame {
-  border: 1px solid #e5e5e5;
-  padding: 4px;
-  box-sizing: border-box;
+/* Navigation arrows */
+#event-calendar .fc-prev-button,
+#event-calendar .fc-next-button {
+  font-weight: bold;
 }
 
-/* 🗓️ Highlight day numbers better */
-#event-calendar .fc-daygrid-day-number {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 0 4px;
-  color: #333;
-}
-
-/* 🌤️ Hover state for each day box */
-#event-calendar .fc-daygrid-day:hover {
-  background-color: #f9f9f9;
-}
-
-/* 🧘 Slight background for weekend days (optional) */
-#event-calendar .fc-day-sat,
-#event-calendar .fc-day-sun {
-  background-color: #fafafa;
-}
-
-/* 🧍 Slight margin between stacked events */
-#event-calendar .fc-event {
-  margin-bottom: 3px;
+/* Calendar responsiveness */
+#calendar {
+  max-width: 100% !important;
+  width: 100% !important;
 }/* End custom CSS */
 /* Start custom CSS for shortcode, class: .elementor-element-3203a0f */.wpem-main {
     max-width: 100% !important;

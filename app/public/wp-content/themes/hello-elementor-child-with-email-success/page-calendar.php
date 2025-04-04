@@ -44,12 +44,43 @@ document.addEventListener('DOMContentLoaded', function () {
         window.open(info.event.url, '_blank');
       }
     },
-    events: function(fetchInfo, successCallback, failureCallback) {
-      fetch('/wp-admin/admin-ajax.php', {
+
+    //events: function(fetchInfo, successCallback, failureCallback) {
+      //fetch('/wp-admin/admin-ajax.php', {
+        //method: 'POST',
+        //headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        //body: 'action=get_calendar_events'
+      //})
+
+
+      events: function(fetchInfo, successCallback, failureCallback) {
+    const eventType = document.querySelector('[name="event_type"]')?.value || '';
+    const eventCategory = document.querySelector('[name="event_category"]')?.value || '';
+
+    const bodyData = new URLSearchParams({
+        action: 'get_calendar_events',
+        event_type: eventType,
+        event_category: eventCategory
+    });
+
+    fetch('/wp-admin/admin-ajax.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: 'action=get_calendar_events'
-      })
+        body: bodyData.toString()
+    })
+    .then(response => response.json())
+    .then(events => {
+        console.log("📅 Loaded filtered events:", events);
+        successCallback(events);
+    })
+    .catch(error => {
+        console.error("❌ Failed to load events:", error);
+        failureCallback(error);
+    });
+}
+
+
+
       .then(res => res.json())
       .then(data => {
         allEvents = data;
