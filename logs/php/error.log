@@ -1324,3 +1324,7 @@ Stack trace:
 [05-Apr-2025 06:14:58 UTC] 📦 Found 1 registration(s)
 [05-Apr-2025 06:15:00 UTC] 📨 Reminder sent to: johnsmith.41068800@gmail.com for event: Test Event for email notification
 [05-Apr-2025 06:15:00 UTC] ✅ Reminder process completed at 2025-04-05 06:15:00
+[05-Apr-2025 06:45:37 UTC] 🔄 Checking for events happening on: 2025-04-05
+[05-Apr-2025 06:45:37 UTC] 📦 Found 1 registration(s)
+[05-Apr-2025 06:45:40 UTC] 📨 Reminder sent to: s0379679@salemstate.edu for event: Test Event for email notification
+[05-Apr-2025 06:45:40 UTC] ✅ Reminder process completed at 2025-04-05 06:45:40
