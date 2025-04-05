@@ -87,13 +87,6 @@ $wpdb->insert($table, [
 ]);
 
 
-
-   
-      
-
-
-
-
     // Send confirmation email
     $subject = 'Your Event Registration was Successful!';
     $message = 'Hi ' . $name . ",\n\nThank you for registering for the event. We have received your registration details.\n\nSee you there!\n\n— Salem Events Hub";
@@ -172,25 +165,52 @@ if (!function_exists('get_calendar_events')) {
 }
 
 
-//new ish 3 31 Enable custom event taxonomies for REST API
-function expose_event_taxonomies_to_rest() {
-    register_taxonomy('event_type', 'event_listing', [
-        'label' => 'Event Types',
-        'public' => true,
-        'rewrite' => ['slug' => 'event_type'],
-        'hierarchical' => false,
-        'show_in_rest' => true,
-    ]);
+//send email notification for events on the day they start
+function send_event_reminder_emails() {
+    global $wpdb;
 
-    register_taxonomy('event_category', 'event_listing', [
-        'label' => 'Event Categories',
-        'public' => true,
-        'rewrite' => ['slug' => 'event_category'],
-        'hierarchical' => true,
-        'show_in_rest' => true,
-    ]);
+    $table = $wpdb->prefix . 'event_custom_registrations';
+    $today = gmdate('Y-m-d'); // UTC date
+
+    error_log("🔄 Checking for events happening on: $today");
+
+    $registrations = $wpdb->get_results($wpdb->prepare("
+        SELECT r.*, p.post_title, m.meta_value as event_start
+        FROM {$table} r
+        JOIN {$wpdb->prefix}posts p ON p.ID = r.event_id
+        JOIN {$wpdb->prefix}postmeta m ON m.post_id = r.event_id
+        WHERE m.meta_key = '_event_start_date'
+        AND DATE(m.meta_value) = %s
+        AND (r.reminder_sent IS NULL OR r.reminder_sent = 0)
+    ", $today));
+
+    if (empty($registrations)) {
+        error_log("🚫 No registrations found for events today ($today).");
+        return;
+    }
+
+    error_log("📦 Found " . count($registrations) . " registration(s)");
+    foreach ($registrations as $r) {
+        $start_time = date('l, F jS Y \a\t g:i A', strtotime($r->event_start));
+        $subject = "🔔 Reminder: {$r->post_title} is today!";
+        $message = "Hi {$r->name},\n\nJust a quick reminder that you registered for \"{$r->post_title}\" happening today at {$start_time}.\n\nSee you there!\n\n— Salem Events Hub";
+        $headers = ['Content-Type: text/plain; charset=UTF-8'];
+
+        wp_mail($r->email, $subject, $message, $headers);
+        $wpdb->update($table, ['reminder_sent' => 1], ['id' => $r->id]);
+
+        error_log("📨 Reminder sent to: {$r->email} for event: {$r->post_title}");
+    }
+
+    error_log("✅ Reminder process completed at " . current_time('mysql'));
 }
-add_action('init', 'expose_event_taxonomies_to_rest');
+
+//ish
+if (!wp_next_scheduled('daily_event_email_reminders')) {
+    wp_schedule_event(time(), 'daily', 'daily_event_email_reminders');
+}
+add_action('daily_event_email_reminders', 'send_event_reminder_emails');
+
 
 
 ?>

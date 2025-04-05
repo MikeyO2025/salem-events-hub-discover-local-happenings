@@ -760,3 +760,567 @@ Stack trace:
 [04-Apr-2025 05:05:27 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
 [04-Apr-2025 05:10:39 UTC] PHP Warning:  Undefined array key "editor_post_id" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor-pro\modules\theme-builder\classes\conditions-manager.php on line 181
 [04-Apr-2025 05:10:39 UTC] PHP Warning:  Undefined array key "editor_post_id" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\elementor\modules\history\revisions-manager.php on line 363
+[04-Apr-2025 22:44:52 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1338
+[04-Apr-2025 22:44:55 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1339
+[05-Apr-2025 02:38:35 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1344
+[05-Apr-2025 02:40:57 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[05-Apr-2025 02:40:57 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[05-Apr-2025 02:40:57 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[05-Apr-2025 02:44:53 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1346
+[05-Apr-2025 03:20:13 UTC] ✅ Reminder function ran at 2025-04-05 03:20:13
+[05-Apr-2025 03:20:13 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:20:13 UTC] 
+[05-Apr-2025 03:20:13 UTC] ✅ Reminder function ran at 2025-04-05 03:20:13
+[05-Apr-2025 03:20:13 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:20:13 UTC] 
+[05-Apr-2025 03:20:15 UTC] ✅ Reminder function ran at 2025-04-05 03:20:15
+[05-Apr-2025 03:20:15 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:20:15 UTC] 
+[05-Apr-2025 03:20:15 UTC] ✅ Reminder function ran at 2025-04-05 03:20:15
+[05-Apr-2025 03:20:15 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:20:15 UTC] 
+[05-Apr-2025 03:21:01 UTC] ✅ Reminder function ran at 2025-04-05 03:21:01
+[05-Apr-2025 03:21:01 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:21:01 UTC] 
+[05-Apr-2025 03:21:02 UTC] ✅ Reminder function ran at 2025-04-05 03:21:02
+[05-Apr-2025 03:21:02 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:21:02 UTC] 
+[05-Apr-2025 03:21:04 UTC] ✅ Reminder function ran at 2025-04-05 03:21:04
+[05-Apr-2025 03:21:04 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:21:04 UTC] 
+[05-Apr-2025 03:21:11 UTC] ✅ Reminder function ran at 2025-04-05 03:21:11
+[05-Apr-2025 03:21:11 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:21:11 UTC] 
+[05-Apr-2025 03:23:55 UTC] ✅ Reminder function ran at 2025-04-05 03:23:55
+[05-Apr-2025 03:23:55 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:23:55 UTC] 
+[05-Apr-2025 03:23:55 UTC] ✅ Reminder function ran at 2025-04-05 03:23:55
+[05-Apr-2025 03:23:55 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:23:55 UTC] 
+[05-Apr-2025 03:23:57 UTC] ✅ Reminder function ran at 2025-04-05 03:23:57
+[05-Apr-2025 03:23:57 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:23:57 UTC] 
+[05-Apr-2025 03:23:57 UTC] ✅ Reminder function ran at 2025-04-05 03:23:57
+[05-Apr-2025 03:23:57 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:23:57 UTC] 
+[05-Apr-2025 03:23:57 UTC] ✅ Reminder function ran at 2025-04-05 03:23:57
+[05-Apr-2025 03:23:57 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:23:57 UTC] 
+[05-Apr-2025 03:24:01 UTC] ✅ Reminder function ran at 2025-04-05 03:24:01
+[05-Apr-2025 03:24:01 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:24:01 UTC] 
+[05-Apr-2025 03:24:05 UTC] ✅ Reminder function ran at 2025-04-05 03:24:05
+[05-Apr-2025 03:24:05 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:24:05 UTC] 
+[05-Apr-2025 03:24:08 UTC] ✅ Reminder function ran at 2025-04-05 03:24:08
+[05-Apr-2025 03:24:08 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:24:08 UTC] 
+[05-Apr-2025 03:24:18 UTC] ✅ Reminder function ran at 2025-04-05 03:24:18
+[05-Apr-2025 03:24:18 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:24:18 UTC] 
+[05-Apr-2025 03:24:19 UTC] ✅ Reminder function ran at 2025-04-05 03:24:19
+[05-Apr-2025 03:24:19 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 230
+[05-Apr-2025 03:24:19 UTC] 
+[05-Apr-2025 03:26:09 UTC] ✅ Reminder function ran at 2025-04-05 03:26:09
+[05-Apr-2025 03:26:09 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 236
+[05-Apr-2025 03:26:09 UTC] 
+[05-Apr-2025 03:26:09 UTC] ✅ Reminder function ran at 2025-04-05 03:26:09
+[05-Apr-2025 03:26:09 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 236
+[05-Apr-2025 03:26:09 UTC] 
+[05-Apr-2025 03:26:09 UTC] 🔄 Checking for events on: 2025-04-05
+[05-Apr-2025 03:26:09 UTC] 📦 Found 2 registration(s)
+[05-Apr-2025 03:26:11 UTC] ✅ Reminder function ran at 2025-04-05 03:26:11
+[05-Apr-2025 03:26:11 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 236
+[05-Apr-2025 03:26:11 UTC] 
+[05-Apr-2025 03:26:12 UTC] 📨 Sent reminder to: michaeloleary147@gmail.com for event: Test Event for email notification
+[05-Apr-2025 03:26:15 UTC] 📨 Sent reminder to: michaeloleary147@gmail.com for event: test 2 ish
+[05-Apr-2025 03:26:15 UTC] ✅ Reminder function ran at 2025-04-05 03:26:15
+[05-Apr-2025 03:26:15 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 236
+[05-Apr-2025 03:26:15 UTC] 
+[05-Apr-2025 03:38:45 UTC] ✅ Reminder function ran at 2025-04-05 03:38:45
+[05-Apr-2025 03:38:45 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 236
+[05-Apr-2025 03:38:45 UTC] 
+[05-Apr-2025 03:38:46 UTC] ✅ Reminder function ran at 2025-04-05 03:38:46
+[05-Apr-2025 03:38:46 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 236
+[05-Apr-2025 03:38:46 UTC] 
+[05-Apr-2025 03:43:19 UTC] ✅ Reminder function ran at 2025-04-05 03:43:19
+[05-Apr-2025 03:43:19 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:19 UTC] 
+[05-Apr-2025 03:43:19 UTC] ✅ Reminder function ran at 2025-04-05 03:43:19
+[05-Apr-2025 03:43:19 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:19 UTC] 
+[05-Apr-2025 03:43:20 UTC] ✅ Reminder function ran at 2025-04-05 03:43:20
+[05-Apr-2025 03:43:20 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:20 UTC] 
+[05-Apr-2025 03:43:49 UTC] ✅ Reminder function ran at 2025-04-05 03:43:49
+[05-Apr-2025 03:43:49 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:49 UTC] 
+[05-Apr-2025 03:43:56 UTC] ✅ Reminder function ran at 2025-04-05 03:43:56
+[05-Apr-2025 03:43:56 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:56 UTC] 
+[05-Apr-2025 03:43:56 UTC] ✅ Reminder function ran at 2025-04-05 03:43:56
+[05-Apr-2025 03:43:56 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:56 UTC] 
+[05-Apr-2025 03:43:57 UTC] ✅ Reminder function ran at 2025-04-05 03:43:57
+[05-Apr-2025 03:43:57 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:57 UTC] 
+[05-Apr-2025 03:43:58 UTC] ✅ Reminder function ran at 2025-04-05 03:43:58
+[05-Apr-2025 03:43:58 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:58 UTC] 
+[05-Apr-2025 03:43:58 UTC] ✅ Reminder function ran at 2025-04-05 03:43:58
+[05-Apr-2025 03:43:58 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:58 UTC] 
+[05-Apr-2025 03:43:58 UTC] ✅ Reminder function ran at 2025-04-05 03:43:58
+[05-Apr-2025 03:43:58 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:58 UTC] 
+[05-Apr-2025 03:43:58 UTC] ✅ Reminder function ran at 2025-04-05 03:43:58
+[05-Apr-2025 03:43:58 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:58 UTC] 
+[05-Apr-2025 03:43:58 UTC] ✅ Reminder function ran at 2025-04-05 03:43:58
+[05-Apr-2025 03:43:58 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:58 UTC] 
+[05-Apr-2025 03:43:58 UTC] ✅ Reminder function ran at 2025-04-05 03:43:58
+[05-Apr-2025 03:43:58 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:58 UTC] 
+[05-Apr-2025 03:43:59 UTC] ✅ Reminder function ran at 2025-04-05 03:43:59
+[05-Apr-2025 03:43:59 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:59 UTC] 
+[05-Apr-2025 03:43:59 UTC] ✅ Reminder function ran at 2025-04-05 03:43:59
+[05-Apr-2025 03:43:59 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:43:59 UTC] 
+[05-Apr-2025 03:44:06 UTC] ✅ Reminder function ran at 2025-04-05 03:44:06
+[05-Apr-2025 03:44:06 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:44:06 UTC] 
+[05-Apr-2025 03:44:12 UTC] ✅ Reminder function ran at 2025-04-05 03:44:12
+[05-Apr-2025 03:44:12 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:44:12 UTC] 
+[05-Apr-2025 03:44:18 UTC] ✅ Reminder function ran at 2025-04-05 03:44:18
+[05-Apr-2025 03:44:18 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:44:18 UTC] 
+[05-Apr-2025 03:44:58 UTC] ✅ Reminder function ran at 2025-04-05 03:44:58
+[05-Apr-2025 03:44:58 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:44:58 UTC] 
+[05-Apr-2025 03:44:58 UTC] ✅ Reminder function ran at 2025-04-05 03:44:58
+[05-Apr-2025 03:44:58 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:44:58 UTC] 
+[05-Apr-2025 03:44:58 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1349
+[05-Apr-2025 03:45:43 UTC] ✅ Reminder function ran at 2025-04-05 03:45:43
+[05-Apr-2025 03:45:43 UTC] ✅ Reminder function ran at 2025-04-05 03:45:43
+[05-Apr-2025 03:45:43 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:43 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:43 UTC] 
+[05-Apr-2025 03:45:43 UTC] 
+[05-Apr-2025 03:45:43 UTC] ✅ Reminder function ran at 2025-04-05 03:45:43
+[05-Apr-2025 03:45:43 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:43 UTC] 
+[05-Apr-2025 03:45:44 UTC] ✅ Reminder function ran at 2025-04-05 03:45:44
+[05-Apr-2025 03:45:44 UTC] ✅ Reminder function ran at 2025-04-05 03:45:44
+[05-Apr-2025 03:45:44 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:44 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:44 UTC] 
+[05-Apr-2025 03:45:44 UTC] 
+[05-Apr-2025 03:45:44 UTC] ✅ Reminder function ran at 2025-04-05 03:45:44
+[05-Apr-2025 03:45:44 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:44 UTC] 
+[05-Apr-2025 03:45:44 UTC] ✅ Reminder function ran at 2025-04-05 03:45:44
+[05-Apr-2025 03:45:44 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:44 UTC] 
+[05-Apr-2025 03:45:44 UTC] ✅ Reminder function ran at 2025-04-05 03:45:44
+[05-Apr-2025 03:45:44 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:44 UTC] 
+[05-Apr-2025 03:45:44 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[05-Apr-2025 03:45:44 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[05-Apr-2025 03:45:44 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[05-Apr-2025 03:45:45 UTC] ✅ Reminder function ran at 2025-04-05 03:45:45
+[05-Apr-2025 03:45:45 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:45 UTC] 
+[05-Apr-2025 03:45:45 UTC] ✅ Reminder function ran at 2025-04-05 03:45:45
+[05-Apr-2025 03:45:45 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:45 UTC] 
+[05-Apr-2025 03:45:45 UTC] ✅ Reminder function ran at 2025-04-05 03:45:45
+[05-Apr-2025 03:45:45 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:45 UTC] 
+[05-Apr-2025 03:45:47 UTC] ✅ Reminder function ran at 2025-04-05 03:45:47
+[05-Apr-2025 03:45:47 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:47 UTC] 
+[05-Apr-2025 03:45:47 UTC] ✅ Reminder function ran at 2025-04-05 03:45:47
+[05-Apr-2025 03:45:47 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:47 UTC] 
+[05-Apr-2025 03:45:53 UTC] ✅ Reminder function ran at 2025-04-05 03:45:53
+[05-Apr-2025 03:45:53 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:53 UTC] 
+[05-Apr-2025 03:45:53 UTC] ✅ Reminder function ran at 2025-04-05 03:45:53
+[05-Apr-2025 03:45:53 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:53 UTC] 
+[05-Apr-2025 03:45:55 UTC] ✅ Reminder function ran at 2025-04-05 03:45:55
+[05-Apr-2025 03:45:55 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 249
+[05-Apr-2025 03:45:55 UTC] 
+[05-Apr-2025 03:48:07 UTC] 🔄 Checking for events on: 2025-04-06
+[05-Apr-2025 03:48:07 UTC] 🚫 No registrations found for events on 2025-04-06
+[05-Apr-2025 04:00:27 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1351
+[05-Apr-2025 04:12:25 UTC] 🔍 Looking for events between 2025-04-06 04:12:25 and 2025-04-06 05:12:25
+[05-Apr-2025 04:12:25 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:12:37 UTC] 🔍 Looking for events between 2025-04-06 04:12:37 and 2025-04-06 05:12:37
+[05-Apr-2025 04:12:37 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:13:20 UTC] 🔍 Looking for events between 2025-04-06 04:13:20 and 2025-04-06 05:13:20
+[05-Apr-2025 04:13:20 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:26:39 UTC] 🔍 Looking for events between 2025-04-06 04:26:39 and 2025-04-06 05:26:39
+[05-Apr-2025 04:26:39 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:27:47 UTC] 🔍 Looking for events between 2025-04-06 04:27:47 and 2025-04-06 05:27:47
+[05-Apr-2025 04:27:47 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:36:22 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1353
+[05-Apr-2025 04:38:53 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1355
+[05-Apr-2025 04:40:27 UTC] 🔍 Looking for events between 2025-04-06 04:40:27 and 2025-04-06 05:40:27
+[05-Apr-2025 04:40:27 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:42:40 UTC] 🔍 Looking for events between 2025-04-06 04:42:40 and 2025-04-06 05:42:40
+[05-Apr-2025 04:42:40 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:42:42 UTC] 🔍 Looking for events between 2025-04-06 04:42:42 and 2025-04-06 05:42:42
+[05-Apr-2025 04:42:42 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:42:43 UTC] 🔍 Looking for events between 2025-04-06 04:42:43 and 2025-04-06 05:42:43
+[05-Apr-2025 04:42:43 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:42:44 UTC] 🔍 Looking for events between 2025-04-06 04:42:44 and 2025-04-06 05:42:44
+[05-Apr-2025 04:42:44 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:42:47 UTC] 🔍 Looking for events between 2025-04-06 04:42:47 and 2025-04-06 05:42:47
+[05-Apr-2025 04:42:47 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:42:50 UTC] 🔍 Looking for events between 2025-04-06 04:42:50 and 2025-04-06 05:42:50
+[05-Apr-2025 04:42:50 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:42:51 UTC] 🔍 Looking for events between 2025-04-06 04:42:51 and 2025-04-06 05:42:51
+[05-Apr-2025 04:42:51 UTC] 🔍 Looking for events between 2025-04-06 04:42:51 and 2025-04-06 05:42:51
+[05-Apr-2025 04:42:51 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:42:51 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:42:51 UTC] 🔍 Looking for events between 2025-04-06 04:42:51 and 2025-04-06 05:42:51
+[05-Apr-2025 04:42:51 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:44:45 UTC] 🔍 Looking for events between 2025-04-06 04:44:45 and 2025-04-06 05:44:45
+[05-Apr-2025 04:44:45 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:44:56 UTC] 🔍 Looking for events between 2025-04-06 04:44:56 and 2025-04-06 05:44:56
+[05-Apr-2025 04:44:56 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:46:29 UTC] 🔍 Looking for events between 2025-04-06 04:46:29 and 2025-04-06 05:46:29
+[05-Apr-2025 04:46:29 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:46:31 UTC] 🔍 Looking for events between 2025-04-06 04:46:31 and 2025-04-06 05:46:31
+[05-Apr-2025 04:46:31 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:46:31 UTC] 🔍 Looking for events between 2025-04-06 04:46:31 and 2025-04-06 05:46:31
+[05-Apr-2025 04:46:31 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:46:31 UTC] 🔍 Looking for events between 2025-04-06 04:46:31 and 2025-04-06 05:46:31
+[05-Apr-2025 04:46:31 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 04:56:17 UTC] 🔍 Searching for events between 2025-04-06 04:56:17 and 2025-04-06 05:56:17 (UTC)
+[05-Apr-2025 04:56:17 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 04:56:35 UTC] 🔍 Searching for events between 2025-04-06 04:56:35 and 2025-04-06 05:56:35 (UTC)
+[05-Apr-2025 04:56:35 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 04:56:49 UTC] 🔍 Searching for events between 2025-04-06 04:56:49 and 2025-04-06 05:56:49 (UTC)
+[05-Apr-2025 04:56:49 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:01:48 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1357
+[05-Apr-2025 05:01:59 UTC] 🔍 Searching for events between 2025-04-06 05:01:59 and 2025-04-06 06:01:59 (UTC)
+[05-Apr-2025 05:01:59 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:07:37 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1359
+[05-Apr-2025 05:08:15 UTC] 🔍 Searching for events between 2025-04-06 05:08:15 and 2025-04-06 06:08:15 (UTC)
+[05-Apr-2025 05:08:15 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:14:31 UTC] 🔍 Searching for events between 2025-04-06 05:14:31 and 2025-04-06 06:14:31 (UTC)
+[05-Apr-2025 05:14:31 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:14:31 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 05:14:34 UTC] 🔍 Searching for events between 2025-04-06 05:14:34 and 2025-04-06 06:14:34 (UTC)
+[05-Apr-2025 05:14:34 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:14:34 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 05:15:57 UTC] 🔍 Searching for events between 2025-04-06 05:15:57 and 2025-04-06 06:15:57 (UTC)
+[05-Apr-2025 05:15:57 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:15:57 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 05:15:58 UTC] 🔍 Searching for events between 2025-04-06 05:15:58 and 2025-04-06 06:15:58 (UTC)
+[05-Apr-2025 05:15:58 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:15:58 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 05:16:12 UTC] 🔍 Searching for events between 2025-04-06 05:16:12 and 2025-04-06 06:16:12 (UTC)
+[05-Apr-2025 05:16:12 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:16:12 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 05:25:46 UTC] 🔍 Searching for events between 2025-04-06 05:25:46 and 2025-04-06 06:25:46 (UTC)
+[05-Apr-2025 05:25:46 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:25:46 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 05:27:16 UTC] 🔍 Searching for events between 2025-04-06 05:27:16 and 2025-04-06 06:27:16 (UTC)
+[05-Apr-2025 05:27:16 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:27:16 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:27:33 UTC] 🔍 Searching for events between 2025-04-06 05:27:33 and 2025-04-06 06:27:33 (UTC)
+[05-Apr-2025 05:27:33 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:27:33 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:21 UTC] 🔍 Searching for events between 2025-04-06 05:32:21 and 2025-04-06 06:32:21 (UTC)
+[05-Apr-2025 05:32:21 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:21 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:22 UTC] 🔍 Searching for events between 2025-04-06 05:32:22 and 2025-04-06 06:32:22 (UTC)
+[05-Apr-2025 05:32:22 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:22 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:23 UTC] 🔍 Searching for events between 2025-04-06 05:32:23 and 2025-04-06 06:32:23 (UTC)
+[05-Apr-2025 05:32:23 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:23 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:23 UTC] 🔍 Searching for events between 2025-04-06 05:32:23 and 2025-04-06 06:32:23 (UTC)
+[05-Apr-2025 05:32:23 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:23 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:23 UTC] 🔍 Searching for events between 2025-04-06 05:32:23 and 2025-04-06 06:32:23 (UTC)
+[05-Apr-2025 05:32:23 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:23 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:24 UTC] 🔍 Searching for events between 2025-04-06 05:32:24 and 2025-04-06 06:32:24 (UTC)
+[05-Apr-2025 05:32:24 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:24 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:25 UTC] 🔍 Searching for events between 2025-04-06 05:32:25 and 2025-04-06 06:32:25 (UTC)
+[05-Apr-2025 05:32:25 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:25 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:25 UTC] 🔍 Searching for events between 2025-04-06 05:32:25 and 2025-04-06 06:32:25 (UTC)
+[05-Apr-2025 05:32:25 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:25 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:25 UTC] 🔍 Searching for events between 2025-04-06 05:32:25 and 2025-04-06 06:32:25 (UTC)
+[05-Apr-2025 05:32:25 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:25 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:37 UTC] 🔍 Searching for events between 2025-04-06 05:32:37 and 2025-04-06 06:32:37 (UTC)
+[05-Apr-2025 05:32:37 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:37 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:44 UTC] 🔍 Searching for events between 2025-04-06 05:32:44 and 2025-04-06 06:32:44 (UTC)
+[05-Apr-2025 05:32:44 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:44 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:45 UTC] 🔍 Searching for events between 2025-04-06 05:32:45 and 2025-04-06 06:32:45 (UTC)
+[05-Apr-2025 05:32:45 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:45 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:45 UTC] 🔍 Searching for events between 2025-04-06 05:32:45 and 2025-04-06 06:32:45 (UTC)
+[05-Apr-2025 05:32:45 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:45 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:32:46 UTC] 🔍 Searching for events between 2025-04-06 05:32:46 and 2025-04-06 06:32:46 (UTC)
+[05-Apr-2025 05:32:46 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:32:46 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:34:10 UTC] 🔍 Searching for events between 2025-04-06 05:34:10 and 2025-04-06 06:34:10 (UTC)
+[05-Apr-2025 05:34:10 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:34:10 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:34:11 UTC] 🔍 Searching for events between 2025-04-06 05:34:11 and 2025-04-06 06:34:11 (UTC)
+[05-Apr-2025 05:34:11 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:34:11 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:34:19 UTC] 🔍 Searching for events between 2025-04-06 05:34:19 and 2025-04-06 06:34:19 (UTC)
+[05-Apr-2025 05:34:19 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:34:19 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:34:51 UTC] 🔍 Searching for events between 2025-04-06 05:34:51 and 2025-04-06 06:34:51 (UTC)
+[05-Apr-2025 05:34:51 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:34:51 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:34:51 UTC] 🔍 Searching for events between 2025-04-06 05:34:51 and 2025-04-06 06:34:51 (UTC)
+[05-Apr-2025 05:34:51 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:34:51 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:34:55 UTC] 🔍 Searching for events between 2025-04-06 05:34:55 and 2025-04-06 06:34:55 (UTC)
+[05-Apr-2025 05:34:55 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:34:55 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:35:01 UTC] 🔍 Searching for events between 2025-04-06 05:35:01 and 2025-04-06 06:35:01 (UTC)
+[05-Apr-2025 05:35:01 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:35:01 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:35:07 UTC] 🔍 Searching for events between 2025-04-06 05:35:07 and 2025-04-06 06:35:07 (UTC)
+[05-Apr-2025 05:35:07 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:35:07 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:35:09 UTC] 🔍 Searching for events between 2025-04-06 05:35:09 and 2025-04-06 06:35:09 (UTC)
+[05-Apr-2025 05:35:09 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:35:09 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:35:10 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1361
+[05-Apr-2025 05:35:10 UTC] 🔍 Searching for events between 2025-04-06 05:35:10 and 2025-04-06 06:35:10 (UTC)
+[05-Apr-2025 05:35:10 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:35:10 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:36:06 UTC] 🔍 Searching for events between 2025-04-06 05:36:06 and 2025-04-06 06:36:06 (UTC)
+[05-Apr-2025 05:36:07 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:36:07 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:36:07 UTC] 🔍 Searching for events between 2025-04-06 05:36:07 and 2025-04-06 06:36:07 (UTC)
+[05-Apr-2025 05:36:07 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:36:07 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:36:13 UTC] 🔍 Searching for events between 2025-04-06 05:36:13 and 2025-04-06 06:36:13 (UTC)
+[05-Apr-2025 05:36:13 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:36:13 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:36:14 UTC] 🔍 Searching for events between 2025-04-06 05:36:14 and 2025-04-06 06:36:14 (UTC)
+[05-Apr-2025 05:36:14 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:36:14 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:36:14 UTC] 🔍 Searching for events between 2025-04-06 05:36:14 and 2025-04-06 06:36:14 (UTC)
+[05-Apr-2025 05:36:14 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:36:14 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:36:15 UTC] 🔍 Searching for events between 2025-04-06 05:36:15 and 2025-04-06 06:36:15 (UTC)
+[05-Apr-2025 05:36:15 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:36:15 UTC] 🚫 No registrations found in time window.
+[05-Apr-2025 05:39:54 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1363
+[05-Apr-2025 05:44:57 UTC] 🔍 Searching for events between 2025-04-06 05:44:57 and 2025-04-06 06:44:57 (UTC)
+[05-Apr-2025 05:44:57 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:44:57 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 05:45:13 UTC] 🔍 Searching for events between 2025-04-06 05:45:13 and 2025-04-06 06:45:13 (UTC)
+[05-Apr-2025 05:45:13 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:45:13 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 05:47:26 UTC] 🔍 Searching for events between 2025-04-06 05:47:26 and 2025-04-06 06:47:26 (UTC)
+[05-Apr-2025 05:47:26 UTC] 🗂 Raw result: Array
+(
+)
+
+[05-Apr-2025 05:47:26 UTC] 🚫 No registrations found in 24hr window.
+[05-Apr-2025 06:02:10 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:10
+[05-Apr-2025 06:02:10 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:10 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:11 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:11
+[05-Apr-2025 06:02:11 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:11 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:15 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:15
+[05-Apr-2025 06:02:15 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:15 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:16 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:16
+[05-Apr-2025 06:02:16 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:16 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:16 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:16
+[05-Apr-2025 06:02:16 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:16 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:17 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:17
+[05-Apr-2025 06:02:17 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:17 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:18 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:18
+[05-Apr-2025 06:02:18 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:18 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:24 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:24
+[05-Apr-2025 06:02:24 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:24 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:25 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:25
+[05-Apr-2025 06:02:25 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:25 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:25 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:25
+[05-Apr-2025 06:02:25 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:25 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:25 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:25
+[05-Apr-2025 06:02:25 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:25 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:25 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:25
+[05-Apr-2025 06:02:25 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:25 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:38 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:38
+[05-Apr-2025 06:02:38 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:38 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:42 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:42
+[05-Apr-2025 06:02:42 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:42 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:43 UTC] 🕓 PHP Current Time: 2025-04-05 06:02:43
+[05-Apr-2025 06:02:43 UTC] PHP Warning:  Undefined variable $registrations in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:02:43 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 255
+[05-Apr-2025 06:04:02 UTC] 🔄 Checking for events happening on: 2025-04-05
+[05-Apr-2025 06:04:02 UTC] 📦 Found 4 registration(s)
+[05-Apr-2025 06:04:04 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: Test Event for email notification
+[05-Apr-2025 06:04:07 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: test 2 ish
+[05-Apr-2025 06:04:08 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: testyyyy
+[05-Apr-2025 06:04:10 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: heey testttt
+[05-Apr-2025 06:04:10 UTC] ✅ Reminder process completed at 2025-04-05 06:04:10
+[05-Apr-2025 06:05:52 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1365
+[05-Apr-2025 06:08:00 UTC] 🔄 Checking for events happening on: 2025-04-05
+[05-Apr-2025 06:08:00 UTC] 📦 Found 2 registration(s)
+[05-Apr-2025 06:08:03 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: today test ish
+[05-Apr-2025 06:08:04 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: today test ish
+[05-Apr-2025 06:08:04 UTC] ✅ Reminder process completed at 2025-04-05 06:08:04
+[05-Apr-2025 06:14:58 UTC] 🔄 Checking for events happening on: 2025-04-05
+[05-Apr-2025 06:14:58 UTC] 📦 Found 1 registration(s)
+[05-Apr-2025 06:15:00 UTC] 📨 Reminder sent to: johnsmith.41068800@gmail.com for event: Test Event for email notification
+[05-Apr-2025 06:15:00 UTC] ✅ Reminder process completed at 2025-04-05 06:15:00
