@@ -1328,3 +1328,34 @@ Stack trace:
 [05-Apr-2025 06:45:37 UTC] 📦 Found 1 registration(s)
 [05-Apr-2025 06:45:40 UTC] 📨 Reminder sent to: s0379679@salemstate.edu for event: Test Event for email notification
 [05-Apr-2025 06:45:40 UTC] ✅ Reminder process completed at 2025-04-05 06:45:40
+[05-Apr-2025 20:37:10 UTC] 🔄 Checking for events happening on: 2025-04-05
+[05-Apr-2025 20:37:10 UTC] 🚫 No registrations found for events today (2025-04-05).
+[05-Apr-2025 20:48:05 UTC] 🔄 Checking for events happening on: 2025-04-05
+[05-Apr-2025 20:48:05 UTC] 🚫 No registrations found for events today (2025-04-05).
+[05-Apr-2025 22:19:04 UTC] 🔄 Checking for events happening on: 2025-04-05
+[05-Apr-2025 22:19:04 UTC] 🚫 No registrations found for events today (2025-04-05).
+[05-Apr-2025 22:48:54 UTC] 🔄 Checking for events happening on: 2025-04-05
+[05-Apr-2025 22:48:54 UTC] 📦 Found 1 registration(s)
+[05-Apr-2025 22:48:56 UTC] 📨 Reminder sent to: eighth41@gmail.com for event: testyyyy
+[05-Apr-2025 22:48:56 UTC] ✅ Reminder process completed at 2025-04-05 22:48:56
+[06-Apr-2025 01:17:27 UTC] 🔄 Checking for events happening on: 2025-04-06
+[06-Apr-2025 01:17:27 UTC] 📦 Found 12 registration(s)
+[06-Apr-2025 01:17:29 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: ish test ish
+[06-Apr-2025 01:17:30 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: ish test ish
+[06-Apr-2025 01:17:32 UTC] 📨 Reminder sent to: johnsmith.41068800@gmail.com for event: erreerre
+[06-Apr-2025 01:17:34 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: send event test rem
+[06-Apr-2025 01:17:36 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: testttttttttetsrtrds
+[06-Apr-2025 01:17:38 UTC] 📨 Reminder sent to: johnsmith.41068800@gmail.com for event: testttttttttetsrtrds
+[06-Apr-2025 01:17:39 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: srsdtdgt
+[06-Apr-2025 01:17:41 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: tueusfashldbhklfdslfdsklhb
+[06-Apr-2025 01:17:43 UTC] 📨 Reminder sent to: johnsmith.41068800@gmail.com for event: tueusfashldbhklfdslfdsklhb
+[06-Apr-2025 01:17:45 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: tueusfashldbhklfdslfdsklhb
+[06-Apr-2025 01:17:47 UTC] 📨 Reminder sent to: timgail@comcast.net for event: send event test rem
+[06-Apr-2025 01:17:48 UTC] 📨 Reminder sent to: johnsmith.41068800@gmail.com for event: send event test rem
+[06-Apr-2025 01:17:48 UTC] ✅ Reminder process completed at 2025-04-06 01:17:48
+[06-Apr-2025 02:14:47 UTC] 🔄 Checking for events happening on: 2025-04-06
+[06-Apr-2025 02:14:47 UTC] 🚫 No registrations found for events today (2025-04-06).
+[06-Apr-2025 03:49:53 UTC] 🔄 Checking for events happening on: 2025-04-06
+[06-Apr-2025 03:49:53 UTC] 🚫 No registrations found for events today (2025-04-06).
+[06-Apr-2025 03:58:29 UTC] PHP Warning:  Undefined array key 0 in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\wp-event-manager-template.php on line 614
+[06-Apr-2025 04:41:37 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1366
