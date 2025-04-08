@@ -213,4 +213,38 @@ add_action('daily_event_email_reminders', 'send_event_reminder_emails');
 
 
 
+
+//4 1 25 google calendar ish
+function seh_add_google_calendar_button_meta_section($event_id) {
+    if (get_post_type($event_id) !== 'event_listing') return;
+
+    $title = urlencode(get_the_title($event_id));
+    $location = urlencode(get_post_meta($event_id, '_event_location', true));
+    $description = urlencode(strip_tags(get_post_meta($event_id, '_event_description', true)));
+
+    $start_timestamp = get_post_meta($event_id, '_event_start_date', true);
+    $end_timestamp = get_post_meta($event_id, '_event_end_date', true);
+
+    if (!$start_timestamp || !$end_timestamp) return;
+
+    // Format without UTC (Z) so it uses site’s local time
+    $start_date = date("Ymd\THis", strtotime($start_timestamp));
+    $end_date = date("Ymd\THis", strtotime($end_timestamp));
+
+    $google_calendar_url = "https://calendar.google.com/calendar/render?action=TEMPLATE";
+    $google_calendar_url .= "&text={$title}";
+    $google_calendar_url .= "&dates={$start_date}/{$end_date}";
+    $google_calendar_url .= "&details={$description}";
+    $google_calendar_url .= "&location={$location}";
+
+    echo '<div class="event-google-calendar" style="margin: 10px 0;">';
+    echo '<a href="' . esc_url($google_calendar_url) . '" target="_blank" rel="noopener noreferrer" class="google-calendar-button" style="display: inline-block; padding: 10px 15px; background-color: #4285F4; color: #fff; border-radius: 5px; text-decoration: none; font-weight: bold;">';
+    echo '📅 Add to Google Calendar';
+    echo '</a>';
+    echo '</div>';
+}
+add_action('single_event_listing_meta_end', 'seh_add_google_calendar_button_meta_section');
+
+
+
 ?>
