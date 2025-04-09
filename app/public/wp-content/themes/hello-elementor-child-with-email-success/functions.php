@@ -319,45 +319,48 @@ add_action('publish_event_listing', 'sync_event_listing_to_wp_events_full', 10, 
 function sync_event_listing_to_wp_events_full($post_ID, $post) {
     global $wpdb;
 
-    // Skip if already inserted
+    // Skip if already synced
     $exists = $wpdb->get_var($wpdb->prepare(
         "SELECT COUNT(*) FROM {$wpdb->prefix}events WHERE event_id = %d", $post_ID
     ));
     if ($exists) return;
 
-    $event_title = $post->post_title;
-    $event_date  = get_post_meta($post_ID, '_event_start_date', true) ?: current_time('mysql');
+    $event_title    = $post->post_title;
+    $event_date     = get_post_meta($post_ID, '_event_start_date', true) ?: current_time('mysql');
     $event_location = get_post_meta($post_ID, '_event_location', true) ?: 'TBD';
 
-    // Organizer
+    // Organizer info from postmeta (serialized array of post IDs)
     $organizer_ids = get_post_meta($post_ID, '_event_organizer_ids', true);
     $organizer_id = is_array($organizer_ids) ? reset($organizer_ids) : (int) $organizer_ids;
-    $organizer_name = 'SSU Organizer';
+
+    $organizer_name  = 'SSU Organizer';
     $organizer_email = 'salemeventshub@gmail.com';
 
     if ($organizer_id) {
-        $organizer = $wpdb->get_row($wpdb->prepare(
-            "SELECT name, email FROM {$wpdb->prefix}event_organizers WHERE id = %d", $organizer_id
-        ));
-        if ($organizer) {
-            $organizer_name = $organizer->name;
-            $organizer_email = $organizer->email;
+        // Pull from wp_posts and wp_postmeta
+        $post_obj = get_post($organizer_id);
+        $email    = get_post_meta($organizer_id, '_organizer_email', true);
+
+        if ($post_obj && $post_obj->post_type === 'event_organizer') {
+            $organizer_name  = $post_obj->post_title;
+            $organizer_email = $email ?: $organizer_email;
         }
     }
 
-    // Get taxonomy values
-    $event_type = 'Other';
+    // Default taxonomy labels
+    $event_type     = 'Other';
     $event_category = 'General';
 
-    $tax_query = $wpdb->get_results($wpdb->prepare("
-        SELECT t.name, tt.taxonomy 
+    // Fetch taxonomy terms
+    $terms = $wpdb->get_results($wpdb->prepare("
+        SELECT t.name, tt.taxonomy
         FROM {$wpdb->prefix}term_relationships tr
         INNER JOIN {$wpdb->prefix}term_taxonomy tt ON tr.term_taxonomy_id = tt.term_taxonomy_id
-        INNER JOIN {$wpdb->prefix}terms t ON tt.term_id = t.term_id
+        INNER JOIN {$wpdb->prefix}terms t ON t.term_id = tt.term_id
         WHERE tr.object_id = %d
     ", $post_ID));
 
-    foreach ($tax_query as $term) {
+    foreach ($terms as $term) {
         if ($term->taxonomy === 'event_listing_type') {
             $event_type = $term->name;
         } elseif ($term->taxonomy === 'event_listing_category') {
@@ -365,7 +368,7 @@ function sync_event_listing_to_wp_events_full($post_ID, $post) {
         }
     }
 
-    // Insert into custom wp_events table
+    // Insert into wp_events
     $wpdb->insert(
         "{$wpdb->prefix}events",
         [
@@ -381,6 +384,7 @@ function sync_event_listing_to_wp_events_full($post_ID, $post) {
         ]
     );
 }
+
 
 
 
