@@ -1570,3 +1570,110 @@ Stack trace:
 [09-Apr-2025 02:51:55 UTC] 🚫 No registrations found for events today (2025-04-09).
 [09-Apr-2025 03:45:29 UTC] 🔄 Checking for events happening on: 2025-04-09
 [09-Apr-2025 03:45:29 UTC] 🚫 No registrations found for events today (2025-04-09).
+[09-Apr-2025 04:31:08 UTC] 🔄 Checking for events happening on: 2025-04-09
+[09-Apr-2025 04:31:08 UTC] 📦 Found 1 registration(s)
+[09-Apr-2025 04:31:10 UTC] 📨 Reminder sent to: michaeloleary147@gmail.com for event: Red Cross Blood Drive
+[09-Apr-2025 04:31:10 UTC] ✅ Reminder process completed at 2025-04-09 04:31:10
+[09-Apr-2025 04:42:16 UTC] Test insert result: 
+[09-Apr-2025 04:42:16 UTC] Test insert result: 
+[09-Apr-2025 04:42:17 UTC] Test insert result: 
+[09-Apr-2025 04:42:17 UTC] Test insert result: 
+[09-Apr-2025 04:42:17 UTC] Test insert result: 
+[09-Apr-2025 04:44:57 UTC] 🔄 Checking for events happening on: 2025-04-09
+[09-Apr-2025 04:44:57 UTC] 📦 Found 2 registration(s)
+[09-Apr-2025 04:44:59 UTC] 📨 Reminder sent + logged for: johnsmith.41068800@gmail.com | Event: Red Cross Blood Drive
+[09-Apr-2025 04:45:01 UTC] 📨 Reminder sent + logged for: johnsmith.41068800@gmail.com | Event: Red Cross Blood Drive
+[09-Apr-2025 04:45:01 UTC] ✅ Reminder process completed at 2025-04-09 04:45:01
+[09-Apr-2025 04:45:01 UTC] 🔄 Checking for events happening on: 2025-04-09
+[09-Apr-2025 04:45:01 UTC] 🚫 No registrations found for events today (2025-04-09).
+[09-Apr-2025 04:45:07 UTC] 🔄 Checking for events happening on: 2025-04-09
+[09-Apr-2025 04:45:07 UTC] 🚫 No registrations found for events today (2025-04-09).
+[09-Apr-2025 04:47:56 UTC] 🔄 Checking for events happening on: 2025-04-09
+[09-Apr-2025 04:47:56 UTC] 📦 Found 2 registration(s)
+[09-Apr-2025 04:47:58 UTC] 📨 Reminder sent + logged for: michaeloleary147@gmail.com | Event: Red Cross Blood Drive
+[09-Apr-2025 04:48:00 UTC] 📨 Reminder sent + logged for: johnsmith.41068800@gmail.com | Event: Red Cross Blood Drive
+[09-Apr-2025 04:48:00 UTC] ✅ Reminder process completed at 2025-04-09 04:48:00
+[09-Apr-2025 05:07:55 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1382
+[09-Apr-2025 05:14:26 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events
+[09-Apr-2025 05:15:03 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1384
+[09-Apr-2025 05:15:40 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events
+[09-Apr-2025 05:16:04 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1386
+[09-Apr-2025 05:20:20 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events_full
+[09-Apr-2025 05:22:58 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1388
+[09-Apr-2025 05:29:15 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php:339
+Stack trace:
+#0 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-hook.php(326): sync_event_listing_to_wp_events_full(1389, Object(WP_Post))
+#1 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\post.php(5748): do_action('publish_event_l...', 1389, Object(WP_Post), 'preview')
+#4 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\post.php(4950): wp_transition_post_status('publish', 'preview', Object(WP_Post))
+#5 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\post.php(5162): wp_insert_post(Array, false, true)
+#6 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\forms\wp-event-manager-form-submit-event.php(1197): wp_update_post(Array)
+#7 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\forms\wp-event-manager-form-abstract.php(49): WP_Event_Manager_Form_Submit_Event->preview_handler()
+#8 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-hook.php(324): WP_Event_Manager_Form->process(Object(WP))
+#9 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#10 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#11 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp.php(830): do_action_ref_array('wp', Array)
+#12 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\functions.php(1336): WP->main('')
+#13 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-blog-header.php(16): wp()
+#14 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\index.php(17): require('C:\\Users\\micha\\...')
+#15 {main}
+  thrown in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 339
+[09-Apr-2025 05:31:47 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1390
+[09-Apr-2025 05:32:42 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events_full
+[09-Apr-2025 05:36:51 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1392
+[09-Apr-2025 05:38:18 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events_full
+[09-Apr-2025 05:39:49 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1394
+[09-Apr-2025 05:41:02 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php:338
+Stack trace:
+#0 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-hook.php(326): sync_event_listing_to_wp_events_full(1395, Object(WP_Post))
+#1 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\post.php(5748): do_action('publish_event_l...', 1395, Object(WP_Post), 'preview')
+#4 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\post.php(4950): wp_transition_post_status('publish', 'preview', Object(WP_Post))
+#5 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\post.php(5162): wp_insert_post(Array, false, true)
+#6 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\forms\wp-event-manager-form-submit-event.php(1197): wp_update_post(Array)
+#7 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\forms\wp-event-manager-form-abstract.php(49): WP_Event_Manager_Form_Submit_Event->preview_handler()
+#8 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-hook.php(324): WP_Event_Manager_Form->process(Object(WP))
+#9 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#10 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#11 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\class-wp.php(830): do_action_ref_array('wp', Array)
+#12 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-includes\functions.php(1336): WP->main('')
+#13 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-blog-header.php(16): wp()
+#14 C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\index.php(17): require('C:\\Users\\micha\\...')
+#15 {main}
+  thrown in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 338
+[09-Apr-2025 05:42:41 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1396
+[09-Apr-2025 05:43:22 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events
+[09-Apr-2025 05:44:32 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1398
+[09-Apr-2025 05:44:57 UTC] 🔄 Checking for events happening on: 2025-04-09
+[09-Apr-2025 05:44:57 UTC] 📦 Found 1 registration(s)
+[09-Apr-2025 05:44:59 UTC] 📨 Reminder sent + logged for: michaeloleary147@gmail.com | Event: ayodiddy
+[09-Apr-2025 05:44:59 UTC] ✅ Reminder process completed at 2025-04-09 05:44:59
+[09-Apr-2025 05:57:49 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events_full
+[09-Apr-2025 05:59:48 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1400
+[09-Apr-2025 06:00:25 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events_full
+[09-Apr-2025 06:02:17 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1402
+[09-Apr-2025 06:03:35 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events_clean
+[09-Apr-2025 06:04:34 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1404
+[09-Apr-2025 06:08:56 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events_fixed
+[09-Apr-2025 06:10:10 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1406
+[09-Apr-2025 06:13:57 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events
+[09-Apr-2025 06:16:22 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1408
+[09-Apr-2025 06:17:26 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events
+[09-Apr-2025 06:18:18 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1410
+[09-Apr-2025 06:24:44 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 1411 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events
+[09-Apr-2025 06:26:15 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1413
+[09-Apr-2025 06:26:41 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 1411 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events
+[09-Apr-2025 06:26:41 UTC] PHP Warning:  Undefined variable $organizer_name in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 380
+[09-Apr-2025 06:26:41 UTC] PHP Warning:  Undefined variable $organizer_email in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 381
+[09-Apr-2025 06:27:24 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1415
+[09-Apr-2025 06:28:24 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 1411 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events
+[09-Apr-2025 06:40:19 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1417
+[09-Apr-2025 06:41:17 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events
+[09-Apr-2025 06:41:17 UTC] WordPress database error Unknown column 'event_type' in 'field list' for query INSERT INTO `wp_events` (`event_id`, `event_title`, `event_date`, `event_location`, `event_type`, `event_category`, `organizer_id`, `organizer_name`, `organizer_email`) VALUES ('1418', 'Ethans BBBBBBBBBBBBBBBBBBG', '2025-04-11 00:30:00', 'Classroom Building, Central Campus 71 Loring Avenue, Salem, MA 01970 Recital Hall', 'Seminar or Talk', 'Sports and Fitness', '672', 'SSU Organizer', 'salemeventshub@gmail.com') made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events
+[09-Apr-2025 06:49:07 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1419
+[09-Apr-2025 06:49:11 UTC] 🔄 Checking for events happening on: 2025-04-09
+[09-Apr-2025 06:49:11 UTC] 🚫 No registrations found for events today (2025-04-09).
+[09-Apr-2025 06:49:51 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1421
+[09-Apr-2025 06:49:52 UTC] WordPress database error Unknown column 'name' in 'field list' for query SELECT name, email FROM wp_event_organizers WHERE id = 672 made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Event_Manager_Form->process, WP_Event_Manager_Form_Submit_Event->preview_handler, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('publish_event_listing'), WP_Hook->do_action, WP_Hook->apply_filters, sync_event_listing_to_wp_events_full

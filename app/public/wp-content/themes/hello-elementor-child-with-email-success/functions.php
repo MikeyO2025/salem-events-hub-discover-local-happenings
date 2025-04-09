@@ -166,10 +166,60 @@ if (!function_exists('get_calendar_events')) {
 
 
 //send email notification for events on the day they start
+//function send_event_reminder_emails() {
+//    global $wpdb;
+//
+//    $table = $wpdb->prefix . 'event_custom_registrations';
+//    $today = gmdate('Y-m-d'); // UTC date
+//
+//    error_log("🔄 Checking for events happening on: $today");
+//
+//    $registrations = $wpdb->get_results($wpdb->prepare("
+//        SELECT r.*, p.post_title, m.meta_value as event_start
+//        FROM {$table} r
+//        JOIN {$wpdb->prefix}posts p ON p.ID = r.event_id
+//        JOIN {$wpdb->prefix}postmeta m ON m.post_id = r.event_id
+//        WHERE m.meta_key = '_event_start_date'
+//       AND DATE(m.meta_value) = %s
+//        AND (r.reminder_sent IS NULL OR r.reminder_sent = 0)
+//    ", $today));
+//
+//    if (empty($registrations)) {
+//        error_log("🚫 No registrations found for events today ($today).");
+//        return;
+//    }
+
+//    error_log("📦 Found " . count($registrations) . " registration(s)");
+//    foreach ($registrations as $r) {
+//        $start_time = date('l, F jS Y \a\t g:i A', strtotime($r->event_start));
+//        $subject = "🔔 Reminder: {$r->post_title} is today!";
+//        $message = "Hi {$r->name},\n\nJust a quick reminder that you registered for \"{$r->post_title}\" happening today at {$start_time}.\n\nSee you there!\n\n— Salem Events Hub";
+//        $headers = ['Content-Type: text/plain; charset=UTF-8'];
+
+//        wp_mail($r->email, $subject, $message, $headers);
+//        $wpdb->update($table, ['reminder_sent' => 1], ['id' => $r->id]);
+
+//        error_log("📨 Reminder sent to: {$r->email} for event: {$r->post_title}");
+//    }
+
+//    error_log("✅ Reminder process completed at " . current_time('mysql'));
+//}
+
+//ish
+//if (!wp_next_scheduled('daily_event_email_reminders')) {
+//    wp_schedule_event(time(), 'daily', 'daily_event_email_reminders');
+//}
+//add_action('daily_event_email_reminders', 'send_event_reminder_emails');
+
+
+
+
+//send event reminders and sync to wp_notifications
 function send_event_reminder_emails() {
     global $wpdb;
 
     $table = $wpdb->prefix . 'event_custom_registrations';
+    $notifications_table = $wpdb->prefix . 'event_notifications';
     $today = gmdate('Y-m-d'); // UTC date
 
     error_log("🔄 Checking for events happening on: $today");
@@ -196,23 +246,38 @@ function send_event_reminder_emails() {
         $message = "Hi {$r->name},\n\nJust a quick reminder that you registered for \"{$r->post_title}\" happening today at {$start_time}.\n\nSee you there!\n\n— Salem Events Hub";
         $headers = ['Content-Type: text/plain; charset=UTF-8'];
 
-        wp_mail($r->email, $subject, $message, $headers);
-        $wpdb->update($table, ['reminder_sent' => 1], ['id' => $r->id]);
+        // Send the email
+        $sent = wp_mail($r->email, $subject, $message, $headers);
 
-        error_log("📨 Reminder sent to: {$r->email} for event: {$r->post_title}");
+        if ($sent) {
+            // Mark reminder as sent
+            $wpdb->update($table, ['reminder_sent' => 1], ['id' => $r->id]);
+
+            // Insert into wp_event_notifications
+            $wpdb->insert($notifications_table, [
+                'user_email'  => $r->email,
+                'event_id'    => $r->event_id,
+                'event_title' => $r->post_title,
+                'message'     => $message,
+                'sent_at'     => current_time('mysql'),
+            ]);
+
+            error_log("📨 Reminder sent + logged for: {$r->email} | Event: {$r->post_title}");
+        } else {
+            error_log("❌ Email failed to send to: {$r->email}");
+        }
     }
 
     error_log("✅ Reminder process completed at " . current_time('mysql'));
 }
 
-//ish
 if (!wp_next_scheduled('daily_event_email_reminders')) {
     wp_schedule_event(time(), 'daily', 'daily_event_email_reminders');
 }
 add_action('daily_event_email_reminders', 'send_event_reminder_emails');
 
 
-
+//ahhh
 
 //4 1 25 google calendar ish
 function seh_add_google_calendar_button_meta_section($event_id) {
@@ -244,6 +309,82 @@ function seh_add_google_calendar_button_meta_section($event_id) {
     echo '</div>';
 }
 add_action('single_event_listing_meta_end', 'seh_add_google_calendar_button_meta_section');
+
+
+
+
+//4 9 25 new syncing new events posted into wp_events
+add_action('publish_event_listing', 'sync_event_listing_to_wp_events_full', 10, 2);
+
+function sync_event_listing_to_wp_events_full($post_ID, $post) {
+    global $wpdb;
+
+    // Skip if already inserted
+    $exists = $wpdb->get_var($wpdb->prepare(
+        "SELECT COUNT(*) FROM {$wpdb->prefix}events WHERE event_id = %d", $post_ID
+    ));
+    if ($exists) return;
+
+    $event_title = $post->post_title;
+    $event_date  = get_post_meta($post_ID, '_event_start_date', true) ?: current_time('mysql');
+    $event_location = get_post_meta($post_ID, '_event_location', true) ?: 'TBD';
+
+    // Organizer
+    $organizer_ids = get_post_meta($post_ID, '_event_organizer_ids', true);
+    $organizer_id = is_array($organizer_ids) ? reset($organizer_ids) : (int) $organizer_ids;
+    $organizer_name = 'SSU Organizer';
+    $organizer_email = 'salemeventshub@gmail.com';
+
+    if ($organizer_id) {
+        $organizer = $wpdb->get_row($wpdb->prepare(
+            "SELECT name, email FROM {$wpdb->prefix}event_organizers WHERE id = %d", $organizer_id
+        ));
+        if ($organizer) {
+            $organizer_name = $organizer->name;
+            $organizer_email = $organizer->email;
+        }
+    }
+
+    // Get taxonomy values
+    $event_type = 'Other';
+    $event_category = 'General';
+
+    $tax_query = $wpdb->get_results($wpdb->prepare("
+        SELECT t.name, tt.taxonomy 
+        FROM {$wpdb->prefix}term_relationships tr
+        INNER JOIN {$wpdb->prefix}term_taxonomy tt ON tr.term_taxonomy_id = tt.term_taxonomy_id
+        INNER JOIN {$wpdb->prefix}terms t ON tt.term_id = t.term_id
+        WHERE tr.object_id = %d
+    ", $post_ID));
+
+    foreach ($tax_query as $term) {
+        if ($term->taxonomy === 'event_listing_type') {
+            $event_type = $term->name;
+        } elseif ($term->taxonomy === 'event_listing_category') {
+            $event_category = $term->name;
+        }
+    }
+
+    // Insert into custom wp_events table
+    $wpdb->insert(
+        "{$wpdb->prefix}events",
+        [
+            'event_id'        => $post_ID,
+            'event_title'     => $event_title,
+            'event_date'      => $event_date,
+            'event_location'  => $event_location,
+            'event_type'      => $event_type,
+            'event_category'  => $event_category,
+            'organizer_id'    => $organizer_id,
+            'organizer_name'  => $organizer_name,
+            'organizer_email' => $organizer_email,
+        ]
+    );
+}
+
+
+
+
 
 
 
