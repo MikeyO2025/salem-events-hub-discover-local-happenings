@@ -388,6 +388,35 @@ function sync_event_listing_to_wp_events_full($post_ID, $post) {
 
 
 
+//4 9 25 dumb ish trying to auto sync organizers into wp_organizers table
+// Queue organizer sync after full post save
+add_action('save_post_event_organizer', function ($post_ID, $post, $update) {
+    if ($post->post_status !== 'publish') return;
+
+    // Defer sync to after save is complete
+    add_action('shutdown', function () use ($post_ID, $post) {
+        global $wpdb;
+
+        // Avoid duplicates
+        $exists = $wpdb->get_var($wpdb->prepare(
+            "SELECT COUNT(*) FROM {$wpdb->prefix}event_organizers WHERE organizer_id = %d", $post_ID
+        ));
+        if ($exists) return;
+
+        // Now meta should be saved — grab it
+        $organizer_email = get_post_meta($post_ID, '_organizer_email', true);
+        if (empty($organizer_email)) {
+            $organizer_email = 'unknown@unknown.com';
+        }
+
+        $wpdb->insert("{$wpdb->prefix}event_organizers", [
+            'organizer_id'    => $post_ID,
+            'organizer_name'  => $post->post_title,
+            'organizer_email' => $organizer_email
+        ]);
+    });
+}, 10, 3);
+
 
 
 
