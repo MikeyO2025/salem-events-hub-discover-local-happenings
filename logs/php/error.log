@@ -1853,3 +1853,17 @@ Stack trace:
 [09-Apr-2025 07:45:03 UTC] 🔄 Checking for events happening on: 2025-04-09
 [09-Apr-2025 07:45:03 UTC] 🚫 No registrations found for events today (2025-04-09).
 [09-Apr-2025 08:06:40 UTC] Organizer ID: 1439, Email Found: 
+[09-Apr-2025 08:21:24 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1446
+[10-Apr-2025 03:17:05 UTC] 🔄 Checking for events happening on: 2025-04-10
+[10-Apr-2025 03:17:05 UTC] 🚫 No registrations found for events today (2025-04-10).
+[10-Apr-2025 03:44:57 UTC] 🔄 Checking for events happening on: 2025-04-10
+[10-Apr-2025 03:44:57 UTC] 📦 Found 2 registration(s)
+[10-Apr-2025 03:45:00 UTC] 📨 Reminder sent + logged for: michaeloleary147@gmail.com | Event: Mario Kart Tournament
+[10-Apr-2025 03:45:03 UTC] 📨 Reminder sent + logged for: johnsmith.41068800@gmail.com | Event: The 11th Annual Sheila P. Kearney ’54, ‘67G Educators Pinning Ceremony
+[10-Apr-2025 03:45:03 UTC] ✅ Reminder process completed at 2025-04-10 03:45:03
+[10-Apr-2025 04:47:04 UTC] 🔄 Checking for events happening on: 2025-04-10
+[10-Apr-2025 04:47:04 UTC] 🚫 No registrations found for events today (2025-04-10).
+[10-Apr-2025 05:23:59 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1448
+[10-Apr-2025 05:27:52 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[10-Apr-2025 05:27:52 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[10-Apr-2025 05:27:52 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
