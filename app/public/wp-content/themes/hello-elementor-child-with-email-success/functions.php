@@ -314,44 +314,134 @@ add_action('single_event_listing_meta_end', 'seh_add_google_calendar_button_meta
 
 
 //4 9 25 new syncing new events posted into wp_events
+//add_action('publish_event_listing', 'sync_event_listing_to_wp_events_full', 10, 2);
+
+//function sync_event_listing_to_wp_events_full($post_ID, $post) {
+//    global $wpdb;
+//
+    // Skip if already synced
+//    $exists = $wpdb->get_var($wpdb->prepare(
+//        "SELECT COUNT(*) FROM {$wpdb->prefix}events WHERE event_id = %d", $post_ID
+//    ));
+//    if ($exists) return;
+//
+//    $event_title    = $post->post_title;
+//    $event_date     = get_post_meta($post_ID, '_event_start_date', true) ?: current_time('mysql');
+//    $event_location = get_post_meta($post_ID, '_event_location', true) ?: 'TBD';
+
+    // Organizer info from postmeta (serialized array of post IDs)
+//    $organizer_ids = get_post_meta($post_ID, '_event_organizer_ids', true);
+//    $organizer_id = is_array($organizer_ids) ? reset($organizer_ids) : (int) $organizer_ids;
+
+//    $organizer_name  = 'SSU Organizer';
+//    $organizer_email = 'salemeventshub@gmail.com';
+
+//    if ($organizer_id) {
+        // Pull from wp_posts and wp_postmeta
+//        $post_obj = get_post($organizer_id);
+ //       $email    = get_post_meta($organizer_id, '_organizer_email', true);
+
+ //      if ($post_obj && $post_obj->post_type === 'event_organizer') {
+  //          $organizer_name  = $post_obj->post_title;
+  //          $organizer_email = $email ?: $organizer_email;
+ //       }
+  //  }
+
+    // Default taxonomy labels
+//    $event_type     = 'Other';
+ //   $event_category = 'General';
+
+    // Fetch taxonomy terms
+//    $terms = $wpdb->get_results($wpdb->prepare("
+//        SELECT t.name, tt.taxonomy
+//        FROM {$wpdb->prefix}term_relationships tr
+//        INNER JOIN {$wpdb->prefix}term_taxonomy tt ON tr.term_taxonomy_id = tt.term_taxonomy_id
+//        INNER JOIN {$wpdb->prefix}terms t ON t.term_id = tt.term_id
+//        WHERE tr.object_id = %d
+//    ", $post_ID));
+
+//    foreach ($terms as $term) {
+//        if ($term->taxonomy === 'event_listing_type') {
+ //           $event_type = $term->name;
+ //       } elseif ($term->taxonomy === 'event_listing_category') {
+//            $event_category = $term->name;
+ //       }
+//    }
+
+    // Insert into wp_events
+//    $wpdb->insert(
+//        "{$wpdb->prefix}events",
+ //       [
+ //           'event_id'        => $post_ID,
+  //          'event_title'     => $event_title,
+  //          'event_date'      => $event_date,
+  //          'event_location'  => $event_location,
+  //          'event_type'      => $event_type,
+  //          'event_category'  => $event_category,
+  //          'organizer_id'    => $organizer_id,
+  //          'organizer_name'  => $organizer_name,
+  //          'organizer_email' => $organizer_email,
+  //      ]
+ //   );
+//}
+
+
+
+
+
+
+
+//update to commented above 4 13 25
 add_action('publish_event_listing', 'sync_event_listing_to_wp_events_full', 10, 2);
 
 function sync_event_listing_to_wp_events_full($post_ID, $post) {
     global $wpdb;
 
-    // Skip if already synced
-    $exists = $wpdb->get_var($wpdb->prepare(
-        "SELECT COUNT(*) FROM {$wpdb->prefix}events WHERE event_id = %d", $post_ID
-    ));
-    if ($exists) return;
-
     $event_title    = $post->post_title;
     $event_date     = get_post_meta($post_ID, '_event_start_date', true) ?: current_time('mysql');
-    $event_location = get_post_meta($post_ID, '_event_location', true) ?: 'TBD';
+//    $event_location = get_post_meta($post_ID, '_event_location', true) ?: 'TBD';
 
-    // Organizer info from postmeta (serialized array of post IDs)
+//new ish 4 13 replacing above to online isnt null    
+
+    $event_location = get_post_meta($post_ID, '_event_location', true);
+
+        // Check if marked as online
+        $is_online = get_post_meta($post_ID, '_event_online', true);
+        if ($is_online === 'yes') {
+             $event_location = 'Online';
+        }
+
+        if (empty($event_location)) {
+            $event_location = 'TBD';
+        }
+//end newish 4 13
+
+
+    // Organizer info
     $organizer_ids = get_post_meta($post_ID, '_event_organizer_ids', true);
     $organizer_id = is_array($organizer_ids) ? reset($organizer_ids) : (int) $organizer_ids;
 
-    $organizer_name  = 'SSU Organizer';
-    $organizer_email = 'salemeventshub@gmail.com';
+    $organizer_name  = 'Organizer Not Set';
+    $organizer_email = '';
 
     if ($organizer_id) {
-        // Pull from wp_posts and wp_postmeta
         $post_obj = get_post($organizer_id);
         $email    = get_post_meta($organizer_id, '_organizer_email', true);
-
         if ($post_obj && $post_obj->post_type === 'event_organizer') {
             $organizer_name  = $post_obj->post_title;
-            $organizer_email = $email ?: $organizer_email;
+            $organizer_email = $email ?: '';
         }
     }
 
-    // Default taxonomy labels
-    $event_type     = 'Other';
-    $event_category = 'General';
+    // Registration email fallback
+    $registration_email = get_post_meta($post_ID, '_registration', true);
+    if (empty($organizer_email)) {
+        $organizer_email = $registration_email ?: 'not_provided@noemail.com';
+    }
 
-    // Fetch taxonomy terms
+    // Event Type & Category
+    $event_type = 'Other';
+    $event_category = 'General';
     $terms = $wpdb->get_results($wpdb->prepare("
         SELECT t.name, tt.taxonomy
         FROM {$wpdb->prefix}term_relationships tr
@@ -368,27 +458,27 @@ function sync_event_listing_to_wp_events_full($post_ID, $post) {
         }
     }
 
-    // Insert into wp_events
-    $wpdb->insert(
-        "{$wpdb->prefix}events",
-        [
-            'event_id'        => $post_ID,
-            'event_title'     => $event_title,
-            'event_date'      => $event_date,
-            'event_location'  => $event_location,
-            'event_type'      => $event_type,
-            'event_category'  => $event_category,
-            'organizer_id'    => $organizer_id,
-            'organizer_name'  => $organizer_name,
-            'organizer_email' => $organizer_email,
-        ]
-    );
+    // Insert or Replace into wp_events
+    $wpdb->replace("{$wpdb->prefix}events", [
+        'event_id'           => $post_ID,
+        'event_title'        => $event_title,
+        'event_date'         => $event_date,
+        'event_location'     => $event_location,
+        'event_type'         => $event_type,
+        'event_category'     => $event_category,
+        'organizer_id'       => $organizer_id ?: 0,
+        'organizer_name'     => $organizer_name,
+        'organizer_email'    => $organizer_email,
+        'registration_email' => $registration_email,
+    ]);
 }
 
 
 
 
-//4 9 25 dumb ish trying to auto sync organizers into wp_organizers table
+
+
+//4 9 25 trying to auto sync organizers into wp_organizers table
 // Queue organizer sync after full post save
 add_action('save_post_event_organizer', function ($post_ID, $post, $update) {
     if ($post->post_status !== 'publish') return;
@@ -421,7 +511,9 @@ add_action('save_post_event_organizer', function ($post_ID, $post, $update) {
 
 
 
-//add ish 41325lol
+
+
+//add ish 41325 syncing user into user contact info
 // First, try WP Everest's hook
 add_action('user_registration_after_user_meta_update_action', 'seh_sync_user_contact_info_smart', 10, 2);
 
@@ -463,6 +555,66 @@ function seh_sync_user_contact_info_smart($user_id, $form_data = null) {
         'role'         => $role
     ]);
 }
+
+
+
+
+
+
+
+//add updates when users edit profile
+add_action('profile_update', 'seh_update_user_contact_info_on_profile_edit', 10, 2);
+
+function seh_update_user_contact_info_on_profile_edit($user_id, $old_user_data) {
+    $user_info = get_userdata($user_id);
+
+    if (!$user_info) {
+        error_log("⚠️ Profile update failed — no user info for ID $user_id");
+        return;
+    }
+
+    $user_login    = $user_info->user_login;
+    $email         = $user_info->user_email;
+    $role          = isset($user_info->roles[0]) ? $user_info->roles[0] : 'subscriber';
+
+    $first_name    = get_user_meta($user_id, 'first_name', true);
+    $last_name     = get_user_meta($user_id, 'last_name', true);
+    $phone_number  = get_user_meta($user_id, 'user_registration_textarea_1740157275', true);
+
+    error_log("✏️ Profile updated: $user_login | $first_name $last_name | $phone_number");
+
+    global $wpdb;
+
+    // Check if row exists first
+    $exists = $wpdb->get_var($wpdb->prepare(
+        "SELECT COUNT(*) FROM wp_user_contact_info WHERE user_id = %d", $user_id
+    ));
+
+    if ($exists) {
+        // Update existing row
+        $wpdb->update('wp_user_contact_info', [
+            'user_email'   => $email,
+            'first_name'   => $first_name,
+            'last_name'    => $last_name,
+            'phone_number' => $phone_number,
+            'role'         => $role
+        ], ['user_id' => $user_id]);
+    } else {
+        // Insert fresh row (fallback)
+        $wpdb->insert('wp_user_contact_info', [
+            'user_id'      => $user_id,
+            'user_login'   => $user_login,
+            'user_email'   => $email,
+            'first_name'   => $first_name,
+            'last_name'    => $last_name,
+            'phone_number' => $phone_number,
+            'role'         => $role
+        ]);
+    }
+}
+
+
+
 
 
 

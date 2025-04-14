@@ -2074,3 +2074,49 @@ Stack trace:
 [14-Apr-2025 02:47:20 UTC] 📨 Reminder sent + logged for: michaeloleary147@gmail.com | Event: Inaugural Inclusive Excellence Showcase
 [14-Apr-2025 02:47:20 UTC] ✅ Reminder process completed at 2025-04-14 02:47:20
 [14-Apr-2025 03:14:21 UTC] 📥 Final sync: TestToSeeUsername | Test ToSee | +17742657742
+[14-Apr-2025 03:21:02 UTC] 📥 Final sync: goodietooshoe235 | Update Tester | +17742652451
+[14-Apr-2025 03:22:26 UTC] ✏️ Profile updated: eighth41 |   | 
+[14-Apr-2025 03:23:26 UTC] ✏️ Profile updated: eighth41 | Eighth FortyOne | 
+[14-Apr-2025 03:26:30 UTC] ✏️ Profile updated: goodietooshoe235 | Update TesterLOL | +17742652451
+[14-Apr-2025 03:27:51 UTC] ✏️ Profile updated: goodietooshoe235 | Update TesterLOL | +17742650000
+[14-Apr-2025 03:28:01 UTC] ✏️ Profile updated: goodietooshoe235 | Update TesterLOL | +17742652451
+[14-Apr-2025 03:40:22 UTC] ✏️ Profile updated: goodietooshoe235 | UpdateLOL TesterLOL | +17742652451
+[14-Apr-2025 03:50:44 UTC] 🔄 Checking for events happening on: 2025-04-14
+[14-Apr-2025 03:50:44 UTC] 🚫 No registrations found for events today (2025-04-14).
+[14-Apr-2025 04:07:43 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1504
+[14-Apr-2025 04:09:18 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1506
+[14-Apr-2025 04:09:30 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:09:30 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:09:30 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:10:18 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:10:18 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:10:18 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:19:55 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1508
+[14-Apr-2025 04:20:28 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:20:28 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:20:28 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:20:44 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:20:44 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:20:44 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:28:25 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1510
+[14-Apr-2025 04:30:20 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:30:20 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:30:20 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[14-Apr-2025 04:38:04 UTC] ✏️ Profile updated: edp0898 |   | 
+[14-Apr-2025 04:38:09 UTC] 📥 Final sync: edp0898 |   | 
+[14-Apr-2025 04:39:26 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1512
+[14-Apr-2025 04:41:28 UTC] ✏️ Profile updated: edp0898 |   | 
+[14-Apr-2025 04:44:59 UTC] 🔄 Checking for events happening on: 2025-04-14
+[14-Apr-2025 04:44:59 UTC] 📦 Found 1 registration(s)
+[14-Apr-2025 04:45:01 UTC] 📨 Reminder sent + logged for: michaeloleary147@gmail.com | Event: Test wo singing in
+[14-Apr-2025 04:45:01 UTC] ✅ Reminder process completed at 2025-04-14 04:45:01
+[14-Apr-2025 04:46:00 UTC] ✏️ Profile updated: edp0898 | Ethanb Bookoff | 
+[14-Apr-2025 04:51:09 UTC] 📥 Final sync: tetete245 | Test Tets | +17742651585
+[14-Apr-2025 05:05:01 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1514
+[14-Apr-2025 05:09:54 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1516
+[14-Apr-2025 05:24:07 UTC] PHP Warning:  Undefined variable $event_id in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 644
+[14-Apr-2025 05:24:07 UTC] 📬 Registration Email: 
+[14-Apr-2025 05:24:08 UTC] PHP Warning:  Undefined variable $event_id in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 644
+[14-Apr-2025 05:24:08 UTC] 📬 Registration Email: 
+[14-Apr-2025 05:24:09 UTC] PHP Warning:  Undefined variable $event_id in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 644
+[14-Apr-2025 05:24:09 UTC] 📬 Registration Email: 
