@@ -2017,3 +2017,51 @@ Stack trace:
 [13-Apr-2025 04:01:47 UTC] 📨 Reminder sent + logged for: johnsmith.41068800@gmail.com | Event: Hotel Salem Wedding Expo
 [13-Apr-2025 04:01:50 UTC] 📨 Reminder sent + logged for: michaeloleary147@gmail.com | Event: Hotel Salem Wedding Expo
 [13-Apr-2025 04:01:50 UTC] ✅ Reminder process completed at 2025-04-13 04:01:50
+[13-Apr-2025 22:37:18 UTC] 🔄 Checking for events happening on: 2025-04-13
+[13-Apr-2025 22:37:18 UTC] 🚫 No registrations found for events today (2025-04-13).
+[13-Apr-2025 23:14:11 UTC] 🔄 Checking for events happening on: 2025-04-13
+[13-Apr-2025 23:14:11 UTC] 🚫 No registrations found for events today (2025-04-13).
+[13-Apr-2025 23:18:22 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1502
+[13-Apr-2025 23:18:53 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[13-Apr-2025 23:18:53 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[13-Apr-2025 23:18:53 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[13-Apr-2025 23:40:26 UTC] PHP Warning:  Undefined array key "_event_type" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[13-Apr-2025 23:40:26 UTC] PHP Warning:  Undefined array key "_event_category" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[13-Apr-2025 23:40:26 UTC] PHP Warning:  Undefined array key "_event_health_guidelines" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-writepanels.php on line 1250
+[13-Apr-2025 23:52:51 UTC] 🔄 Checking for events happening on: 2025-04-13
+[13-Apr-2025 23:52:51 UTC] 🚫 No registrations found for events today (2025-04-13).
+[13-Apr-2025 23:54:58 UTC] WordPress database error Unknown column 'name' in 'field list' for query INSERT INTO `wp_user_contact_info` (`user_id`, `name`, `email`) VALUES (11, 'testusername', 'test41325@gmail.com') made by do_action('wp_ajax_nopriv_user_registration_user_form_submit'), WP_Hook->do_action, WP_Hook->apply_filters, UR_AJAX::user_form_submit, UR_Frontend_Form_Handler::handle_form, wp_insert_user, do_action('user_register'), WP_Hook->do_action, WP_Hook->apply_filters, seh_sync_user_contact_info
+[14-Apr-2025 00:16:16 UTC] 🔍 User Registered: test900username, test900@gmail.com, , , , subscriber
+[14-Apr-2025 00:16:16 UTC] ✅ Insert successful for user_id 16
+[14-Apr-2025 00:22:03 UTC] PHP Warning:  Attempt to read property "user_login" on bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 431
+[14-Apr-2025 00:22:03 UTC] PHP Warning:  Attempt to read property "user_email" on bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 432
+[14-Apr-2025 00:22:03 UTC] PHP Warning:  foreach() argument must be of type array|object, int given in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 441
+[14-Apr-2025 00:24:48 UTC] PHP Warning:  Attempt to read property "user_login" on bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 431
+[14-Apr-2025 00:24:48 UTC] PHP Warning:  Attempt to read property "user_email" on bool in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\themes\hello-elementor-child-with-email-success\functions.php on line 432
+[14-Apr-2025 00:47:05 UTC] 👋 functions.php loaded at 2025-04-14 00:47:05
+[14-Apr-2025 00:47:06 UTC] 👋 functions.php loaded at 2025-04-14 00:47:06
+[14-Apr-2025 00:47:06 UTC] 🔄 Checking for events happening on: 2025-04-14
+[14-Apr-2025 00:47:06 UTC] 🚫 No registrations found for events today (2025-04-14).
+[14-Apr-2025 00:47:06 UTC] 👋 functions.php loaded at 2025-04-14 00:47:06
+[14-Apr-2025 00:47:07 UTC] 👋 functions.php loaded at 2025-04-14 00:47:07
+[14-Apr-2025 00:47:07 UTC] 👋 functions.php loaded at 2025-04-14 00:47:07
+[14-Apr-2025 00:47:07 UTC] 👋 functions.php loaded at 2025-04-14 00:47:07
+[14-Apr-2025 00:47:07 UTC] 👋 functions.php loaded at 2025-04-14 00:47:07
+[14-Apr-2025 00:47:08 UTC] 👋 functions.php loaded at 2025-04-14 00:47:08
+[14-Apr-2025 00:47:08 UTC] 👋 functions.php loaded at 2025-04-14 00:47:08
+[14-Apr-2025 00:47:08 UTC] 👋 functions.php loaded at 2025-04-14 00:47:08
+[14-Apr-2025 00:47:09 UTC] 👋 functions.php loaded at 2025-04-14 00:47:09
+[14-Apr-2025 00:47:09 UTC] 👋 functions.php loaded at 2025-04-14 00:47:09
+[14-Apr-2025 00:47:09 UTC] 👋 functions.php loaded at 2025-04-14 00:47:09
+[14-Apr-2025 00:47:13 UTC] 👋 functions.php loaded at 2025-04-14 00:47:13
+[14-Apr-2025 00:49:57 UTC] 👋 functions.php loaded at 2025-04-14 00:49:57
+[14-Apr-2025 00:49:57 UTC] 👋 functions.php loaded at 2025-04-14 00:49:57
+[14-Apr-2025 00:51:24 UTC] 👋 functions.php loaded at 2025-04-14 00:51:24
+[14-Apr-2025 00:51:25 UTC] 👋 functions.php loaded at 2025-04-14 00:51:25
+[14-Apr-2025 00:54:02 UTC] 👋 functions.php loaded at 2025-04-14 00:54:02
+[14-Apr-2025 00:54:02 UTC] 👋 functions.php loaded at 2025-04-14 00:54:02
+[14-Apr-2025 00:54:51 UTC] 👋 functions.php loaded at 2025-04-14 00:54:51
+[14-Apr-2025 00:54:51 UTC] 🧨 user_register hook fired for user ID: 23 | Username: testfromuserregister
+[14-Apr-2025 00:58:21 UTC] 🧪 Syncing via user_register: finalvictoryuserBB |   | 
+[14-Apr-2025 01:04:48 UTC] 📥 Syncing user #25:   | Phone: 
+[14-Apr-2025 01:09:01 UTC] 📥 Final sync: testycombo88 | Testy Combo | +17742654679

@@ -421,4 +421,54 @@ add_action('save_post_event_organizer', function ($post_ID, $post, $update) {
 
 
 
+//add ish 41325lol
+// First, try WP Everest's hook
+add_action('user_registration_after_user_meta_update_action', 'seh_sync_user_contact_info_smart', 10, 2);
+
+// Fallback: if Everest doesn’t run, use WP's native user_register + shutdown
+add_action('user_register', function($user_id) {
+    add_action('shutdown', function () use ($user_id) {
+        seh_sync_user_contact_info_smart($user_id);
+    });
+});
+
+// Unified sync function
+function seh_sync_user_contact_info_smart($user_id, $form_data = null) {
+    $user_info = get_userdata($user_id);
+
+    if (!$user_info || !isset($user_info->user_login)) {
+        error_log("❌ Could not load user info for ID: $user_id");
+        return;
+    }
+
+    $user_login    = $user_info->user_login;
+    $email         = $user_info->user_email;
+    $role          = isset($user_info->roles[0]) ? $user_info->roles[0] : 'subscriber';
+
+    $first_name    = get_user_meta($user_id, 'first_name', true);
+    $last_name     = get_user_meta($user_id, 'last_name', true);
+    $phone_number  = get_user_meta($user_id, 'user_registration_textarea_1740157275', true);
+
+    error_log("📥 Final sync: $user_login | $first_name $last_name | $phone_number");
+
+    global $wpdb;
+
+    $wpdb->insert('wp_user_contact_info', [
+        'user_id'      => $user_id,
+        'user_login'   => $user_login,
+        'user_email'   => $email,
+        'first_name'   => $first_name,
+        'last_name'    => $last_name,
+        'phone_number' => $phone_number,
+        'role'         => $role
+    ]);
+}
+
+
+
+
+
+
+
+
 ?>
