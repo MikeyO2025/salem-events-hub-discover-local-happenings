@@ -3362,3 +3362,47 @@ Stack trace:
 [15-Apr-2025 06:49:45 UTC] 📦 Found 1 registration(s)
 [15-Apr-2025 06:49:50 UTC] 📨 Reminder sent + logged for: bignova@gmail.com | Event: Ask a Dietitian
 [15-Apr-2025 06:49:50 UTC] ✅ Reminder process completed at 2025-04-15 06:49:50
+[15-Apr-2025 21:58:57 UTC] 🔄 Checking for events happening on: 2025-04-15
+[15-Apr-2025 21:58:57 UTC] 🚫 No registrations found for events today (2025-04-15).
+[16-Apr-2025 00:12:33 UTC] 🔄 Checking for events happening on: 2025-04-16
+[16-Apr-2025 00:12:33 UTC] 🚫 No registrations found for events today (2025-04-16).
+[16-Apr-2025 00:22:05 UTC] PHP Warning:  Undefined variable $info in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\forms\wp-event-manager-form-submit-organizer.php on line 319
+[16-Apr-2025 00:22:05 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\forms\wp-event-manager-form-submit-organizer.php on line 319
+[16-Apr-2025 00:23:25 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1771
+[16-Apr-2025 00:45:57 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1773
+[16-Apr-2025 00:46:01 UTC] 🔄 Checking for events happening on: 2025-04-16
+[16-Apr-2025 00:46:01 UTC] 🚫 No registrations found for events today (2025-04-16).
+[16-Apr-2025 00:50:14 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1774
+[16-Apr-2025 01:03:14 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1775
+[16-Apr-2025 01:04:13 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1777
+[16-Apr-2025 01:27:02 UTC] 🔄 Checking for events happening on: 2025-04-16
+[16-Apr-2025 01:27:02 UTC] 📦 Found 1 registration(s)
+[16-Apr-2025 01:27:04 UTC] 📨 Reminder sent + logged for: michaeloleary147@gmail.com | Event: Eephus
+[16-Apr-2025 01:27:04 UTC] ✅ Reminder process completed at 2025-04-16 01:27:04
+[16-Apr-2025 01:30:38 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1780
+[16-Apr-2025 01:35:11 UTC] 🔄 Checking for events happening on: 2025-04-16
+[16-Apr-2025 01:35:11 UTC] 📦 Found 2 registration(s)
+[16-Apr-2025 01:35:13 UTC] 📨 Reminder sent + logged for: c7flynn@student.bridgew.edu | Event: testylolll
+[16-Apr-2025 01:35:14 UTC] 📨 Reminder sent + logged for: maguirephillips9@gmail.com | Event: testylolll
+[16-Apr-2025 01:35:14 UTC] ✅ Reminder process completed at 2025-04-16 01:35:14
+[16-Apr-2025 01:54:20 UTC] 🔄 Checking for events happening on: 2025-04-16
+[16-Apr-2025 01:54:20 UTC] 🚫 No registrations found for events today (2025-04-16).
+[16-Apr-2025 02:23:01 UTC] 👀 Template being loaded: C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public/wp-content/themes/hello-elementor/index.php
+[16-Apr-2025 02:23:04 UTC] 👀 Template being loaded: C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public/wp-content/themes/hello-elementor/index.php
+[16-Apr-2025 02:23:10 UTC] 👀 Template being loaded: C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public/wp-content/themes/hello-elementor/index.php
+[16-Apr-2025 03:03:21 UTC] 🔄 Checking for events happening on: 2025-04-16
+[16-Apr-2025 03:03:21 UTC] 📦 Found 1 registration(s)
+[16-Apr-2025 03:03:23 UTC] 📨 Reminder sent + logged for: s_dercole@salemstate.edu | Event: Student Success Series Workshops:
+[16-Apr-2025 03:03:23 UTC] ✅ Reminder process completed at 2025-04-16 03:03:23
+[16-Apr-2025 03:03:42 UTC] 🔄 Checking for events happening on: 2025-04-16
+[16-Apr-2025 03:03:42 UTC] 🚫 No registrations found for events today (2025-04-16).
+[16-Apr-2025 03:41:13 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1782
+[16-Apr-2025 03:45:31 UTC] 🔄 Checking for events happening on: 2025-04-16
+[16-Apr-2025 03:45:31 UTC] 🚫 No registrations found for events today (2025-04-16).
+[16-Apr-2025 04:12:21 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1784
+[16-Apr-2025 04:21:23 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1786
+[16-Apr-2025 04:21:27 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1788
+[16-Apr-2025 04:22:30 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1789
+[16-Apr-2025 05:44:57 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1792
+[16-Apr-2025 05:45:01 UTC] 🔄 Checking for events happening on: 2025-04-16
+[16-Apr-2025 05:45:01 UTC] 🚫 No registrations found for events today (2025-04-16).

@@ -17,6 +17,7 @@ function custom_registration_success_message() {
 add_action('admin_post_submit_event_registration', 'handle_custom_event_registration');
 add_action('admin_post_nopriv_submit_event_registration', 'handle_custom_event_registration');
 
+//415 new
 function handle_custom_event_registration() {
     if (
         !isset($_POST['reg_name'], $_POST['reg_email'], $_POST['event_id']) ||
@@ -25,6 +26,80 @@ function handle_custom_event_registration() {
         wp_die('Invalid form data.');
     }
 
+    $name = sanitize_text_field($_POST['reg_name']);
+    $email = sanitize_email($_POST['reg_email']);
+    $event_id = intval($_POST['event_id']);
+
+    // Fetch the event title
+    $post = get_post($event_id);
+    $event_title = $post ? $post->post_title : 'Unknown Event';
+
+    global $wpdb;
+    $table = $wpdb->prefix . 'event_custom_registrations';
+
+    $wpdb->query(
+        "CREATE TABLE IF NOT EXISTS $table (
+            id BIGINT AUTO_INCREMENT PRIMARY KEY,
+            event_id BIGINT,
+            name VARCHAR(255),
+            email VARCHAR(255),
+            event_title VARCHAR(255),
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )"
+    );
+
+    // Insert data including event_title
+    $wpdb->insert($table, [
+        'event_id' => $event_id,
+        'name' => $name,
+        'email' => $email,
+        'event_title' => $event_title,
+        'created_at' => current_time('mysql')
+    ]);
+
+    // ✅ Personalized confirmation email to user
+    $subject = '✅ Registration Confirmed: ' . $event_title;
+    $event_start_raw = get_post_meta($event_id, '_event_start_date', true);
+    $event_start = $event_start_raw ? date('l, F jS Y \a\t g:i A', strtotime($event_start_raw)) : 'TBD';
+
+    $message = "Hi {$name},\n\nThank you for registering for:\n📅 {$event_title}\n🕒 When: {$event_start}\n\nWe’ve received your registration and look forward to seeing you there!\n\n— Salem Events Hub";
+
+    $headers = ['Content-Type: text/plain; charset=UTF-8'];
+
+    wp_mail($email, $subject, $message, $headers);
+
+    // ✅ Notify both registration_email and organizer_email
+    $registration_email = get_post_meta($event_id, '_registration', true);
+
+    $organizer_ids = get_post_meta($event_id, '_event_organizer_ids', true);
+    $organizer_id = is_array($organizer_ids) ? reset($organizer_ids) : (int) $organizer_ids;
+    $organizer_email = get_post_meta($organizer_id, '_organizer_email', true);
+
+    $notification_emails = array_filter([
+        is_email($registration_email) ? $registration_email : null,
+        is_email($organizer_email) ? $organizer_email : null
+    ]);
+
+    if (!empty($notification_emails)) {
+        $organizer_subject = '📥 New Registration for Your Event: ' . $event_title;
+        $organizer_message = "Hello,\n\nSomeone just registered for your event: \"{$event_title}\".\n\nRegistrant Info:\n- Name: {$name}\n- Email: {$email}\n\nYou can follow up or manage your registrations in the dashboard.\n\n— Salem Events Hub";
+
+        foreach ($notification_emails as $notify_email) {
+            wp_mail($notify_email, $organizer_subject, $organizer_message, $headers);
+        }
+    }
+
+    wp_redirect(get_permalink($event_id) . '?registration=success');
+    exit;
+}
+
+
+
+
+
+
+
+//old ish dont need anymore
     //$name = sanitize_text_field($_POST['reg_name']);
     //$email = sanitize_email($_POST['reg_email']);
     //$event_id = intval($_POST['event_id']);
@@ -50,53 +125,9 @@ function handle_custom_event_registration() {
     //]);
 
 
+    
 
 
-
-
-
-    $name = sanitize_text_field($_POST['reg_name']);
-$email = sanitize_email($_POST['reg_email']);
-$event_id = intval($_POST['event_id']);
-
-//Fetch the event title
-$post = get_post($event_id);
-$event_title = $post ? $post->post_title : 'Unknown Event';
-
-global $wpdb;
-$table = $wpdb->prefix . 'event_custom_registrations';
-
-$wpdb->query(
-    "CREATE TABLE IF NOT EXISTS $table (
-        id BIGINT AUTO_INCREMENT PRIMARY KEY,
-        event_id BIGINT,
-        name VARCHAR(255),
-        email VARCHAR(255),
-        event_title VARCHAR(255),
-        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-    )"
-);
-
-//Insert data including event_title
-$wpdb->insert($table, [
-    'event_id' => $event_id,
-    'name' => $name,
-    'email' => $email,
-    'event_title' => $event_title,
-    'created_at' => current_time('mysql')
-]);
-
-
-    // Send confirmation email
-    $subject = 'Your Event Registration was Successful!';
-    $message = 'Hi ' . $name . ",\n\nThank you for registering for the event. We have received your registration details.\n\nSee you there!\n\n— Salem Events Hub";
-    $headers = ['Content-Type: text/plain; charset=UTF-8'];
-
-    wp_mail($email, $subject, $message, $headers);
-
-    wp_redirect(get_permalink($event_id) . '?registration=success');
-    exit;
-}
 
 //new ish 
 // Load FullCalendar CSS/JS
@@ -478,32 +509,70 @@ function sync_event_listing_to_wp_events_full($post_ID, $post) {
 
 
 
+//commenting out below
 //4 9 25 trying to auto sync organizers into wp_organizers table
 // Queue organizer sync after full post save
+//add_action('save_post_event_organizer', function ($post_ID, $post, $update) {
+//    if ($post->post_status !== 'publish') return;
+
+    // Defer sync to after save is complete
+//    add_action('shutdown', function () use ($post_ID, $post) {
+//        global $wpdb;
+
+        // Avoid duplicates
+//        $exists = $wpdb->get_var($wpdb->prepare(
+//            "SELECT COUNT(*) FROM {$wpdb->prefix}event_organizers WHERE organizer_id = %d", $post_ID
+//        ));
+//        if ($exists) return;
+
+        // Now meta should be saved — grab it
+//        $organizer_email = get_post_meta($post_ID, '_organizer_email', true);
+//        if (empty($organizer_email)) {
+//            $organizer_email = 'unknown@unknown.com';
+ //       }
+
+//        $wpdb->insert("{$wpdb->prefix}event_organizers", [
+ //           'organizer_id'    => $post_ID,
+ //           'organizer_name'  => $post->post_title,
+//            'organizer_email' => $organizer_email
+//        ]);
+//    });
+//}, 10, 3);
+
+
+
+//415 organizer updating 
 add_action('save_post_event_organizer', function ($post_ID, $post, $update) {
     if ($post->post_status !== 'publish') return;
 
-    // Defer sync to after save is complete
     add_action('shutdown', function () use ($post_ID, $post) {
         global $wpdb;
 
-        // Avoid duplicates
-        $exists = $wpdb->get_var($wpdb->prepare(
-            "SELECT COUNT(*) FROM {$wpdb->prefix}event_organizers WHERE organizer_id = %d", $post_ID
-        ));
-        if ($exists) return;
-
-        // Now meta should be saved — grab it
         $organizer_email = get_post_meta($post_ID, '_organizer_email', true);
         if (empty($organizer_email)) {
             $organizer_email = 'unknown@unknown.com';
         }
 
-        $wpdb->insert("{$wpdb->prefix}event_organizers", [
-            'organizer_id'    => $post_ID,
-            'organizer_name'  => $post->post_title,
-            'organizer_email' => $organizer_email
-        ]);
+        $exists = $wpdb->get_var($wpdb->prepare(
+            "SELECT COUNT(*) FROM {$wpdb->prefix}event_organizers WHERE organizer_id = %d", $post_ID
+        ));
+
+        if ($exists) {
+            // UPDATE if it exists
+            $wpdb->update("{$wpdb->prefix}event_organizers", [
+                'organizer_name'  => $post->post_title,
+                'organizer_email' => $organizer_email
+            ], [
+                'organizer_id' => $post_ID
+            ]);
+        } else {
+            // INSERT if new
+            $wpdb->insert("{$wpdb->prefix}event_organizers", [
+                'organizer_id'    => $post_ID,
+                'organizer_name'  => $post->post_title,
+                'organizer_email' => $organizer_email
+            ]);
+        }
     });
 }, 10, 3);
 
@@ -513,6 +582,7 @@ add_action('save_post_event_organizer', function ($post_ID, $post, $update) {
 
 
 
+//added stuff above this
 //add ish 41325 syncing user into user contact info
 // First, try WP Everest's hook
 add_action('user_registration_after_user_meta_update_action', 'seh_sync_user_contact_info_smart', 10, 2);
@@ -612,10 +682,6 @@ function seh_update_user_contact_info_on_profile_edit($user_id, $old_user_data) 
         ]);
     }
 }
-
-
-
-
 
 
 
