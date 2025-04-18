@@ -686,6 +686,16 @@ function seh_update_user_contact_info_on_profile_edit($user_id, $old_user_data) 
 
 
 
+//hide toolbar for all but admin
+add_filter('show_admin_bar', function($show) {
+    if (!current_user_can('administrator')) {
+        return false;
+    }
+    return $show;
+});
+
+
+
 
 
 
