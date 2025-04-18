@@ -695,6 +695,17 @@ add_filter('show_admin_bar', function($show) {
 });
 
 
+//show pic if logged in
+function seh_user_avatar_shortcode() {
+    if (is_user_logged_in()) {
+        $user = wp_get_current_user();
+        return '<div class="seh-user-avatar">' . get_avatar($user->ID, 40) . '</div>';
+    }
+    return '';
+}
+add_shortcode('user_avatar', 'seh_user_avatar_shortcode');
+
+
 
 
 

@@ -3577,3 +3577,20 @@ Stack trace:
 [18-Apr-2025 05:58:05 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-deactivation.php on line 154
 [18-Apr-2025 05:58:05 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-deactivation.php on line 155
 [18-Apr-2025 06:08:15 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1948
+[18-Apr-2025 18:40:03 UTC] 🔄 Checking for events happening on: 2025-04-18
+[18-Apr-2025 18:40:03 UTC] 🚫 No registrations found for events today (2025-04-18).
+[18-Apr-2025 20:20:03 UTC] 🔄 Checking for events happening on: 2025-04-18
+[18-Apr-2025 20:20:03 UTC] 🚫 No registrations found for events today (2025-04-18).
+[18-Apr-2025 20:40:15 UTC] ✏️ Profile updated: test2dad | Tim O'Leary | +17742654352
+[18-Apr-2025 20:40:24 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1960
+[18-Apr-2025 20:54:21 UTC] 🔄 Checking for events happening on: 2025-04-18
+[18-Apr-2025 20:54:21 UTC] 🚫 No registrations found for events today (2025-04-18).
+[18-Apr-2025 21:08:50 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-deactivation.php on line 154
+[18-Apr-2025 21:08:50 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-deactivation.php on line 155
+[18-Apr-2025 21:16:24 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[18-Apr-2025 21:46:02 UTC] 🔄 Checking for events happening on: 2025-04-18
+[18-Apr-2025 21:46:02 UTC] 🚫 No registrations found for events today (2025-04-18).
+[18-Apr-2025 22:45:22 UTC] 🔄 Checking for events happening on: 2025-04-18
+[18-Apr-2025 22:45:22 UTC] 🚫 No registrations found for events today (2025-04-18).
+[18-Apr-2025 22:56:52 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-deactivation.php on line 154
+[18-Apr-2025 22:56:52 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-deactivation.php on line 155
