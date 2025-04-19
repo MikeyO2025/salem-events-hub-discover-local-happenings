@@ -3594,3 +3594,126 @@ Stack trace:
 [18-Apr-2025 22:45:22 UTC] 🚫 No registrations found for events today (2025-04-18).
 [18-Apr-2025 22:56:52 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-deactivation.php on line 154
 [18-Apr-2025 22:56:52 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\admin\wp-event-manager-deactivation.php on line 155
+[19-Apr-2025 01:11:08 UTC] 🔄 Checking for events happening on: 2025-04-19
+[19-Apr-2025 01:11:08 UTC] 🚫 No registrations found for events today (2025-04-19).
+[19-Apr-2025 02:17:51 UTC] 🔄 Checking for events happening on: 2025-04-19
+[19-Apr-2025 02:17:51 UTC] 🚫 No registrations found for events today (2025-04-19).
+[19-Apr-2025 02:18:46 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1971
+[19-Apr-2025 02:28:37 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1973
+[19-Apr-2025 02:28:40 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1975
+[19-Apr-2025 02:40:08 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1977
+[19-Apr-2025 02:45:59 UTC] 🔄 Checking for events happening on: 2025-04-19
+[19-Apr-2025 02:45:59 UTC] 🚫 No registrations found for events today (2025-04-19).
+[19-Apr-2025 02:47:17 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1980
+[19-Apr-2025 02:50:14 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1981
+[19-Apr-2025 02:50:16 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1982
+[19-Apr-2025 02:52:34 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1985
+[19-Apr-2025 02:52:39 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1986
+[19-Apr-2025 03:14:28 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1988
+[19-Apr-2025 03:16:35 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1992
+[19-Apr-2025 03:16:38 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1993
+[19-Apr-2025 03:16:40 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1994
+[19-Apr-2025 03:45:49 UTC] 🔄 Checking for events happening on: 2025-04-19
+[19-Apr-2025 03:45:49 UTC] 🚫 No registrations found for events today (2025-04-19).
+[19-Apr-2025 03:46:12 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1996
+[19-Apr-2025 04:07:25 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 1998
+[19-Apr-2025 04:12:40 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2000
+[19-Apr-2025 04:15:52 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2002
+[19-Apr-2025 04:18:36 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2004
+[19-Apr-2025 04:19:43 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2007
+[19-Apr-2025 04:20:22 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2008
+[19-Apr-2025 04:25:37 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2010
+[19-Apr-2025 04:27:33 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2013
+[19-Apr-2025 04:28:39 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2014
+[19-Apr-2025 04:36:05 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2019
+[19-Apr-2025 04:37:00 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2020
+[19-Apr-2025 04:38:40 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2021
+[19-Apr-2025 04:38:41 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2022
+[19-Apr-2025 04:41:26 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2024
+[19-Apr-2025 04:45:12 UTC] 🔄 Checking for events happening on: 2025-04-19
+[19-Apr-2025 04:45:12 UTC] 🚫 No registrations found for events today (2025-04-19).
+[19-Apr-2025 04:49:32 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2026
+[19-Apr-2025 04:51:56 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2028
+[19-Apr-2025 04:55:07 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2035
+[19-Apr-2025 04:55:36 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2036
+[19-Apr-2025 04:57:48 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2037
+[19-Apr-2025 04:58:45 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2038
+[19-Apr-2025 04:59:49 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2039
+[19-Apr-2025 05:00:35 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2040
+[19-Apr-2025 05:03:54 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2050
+[19-Apr-2025 05:05:38 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2051
+[19-Apr-2025 05:07:32 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2052
+[19-Apr-2025 05:09:38 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2053
+[19-Apr-2025 05:09:39 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2054
+[19-Apr-2025 05:11:48 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2055
+[19-Apr-2025 05:11:51 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2056
+[19-Apr-2025 05:13:14 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2057
+[19-Apr-2025 05:16:32 UTC] PHP Warning:  Undefined array key "search_location" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 171
+[19-Apr-2025 05:16:32 UTC] PHP Warning:  Undefined array key "search_keywords" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 172
+[19-Apr-2025 05:16:32 UTC] PHP Warning:  Undefined array key "orderby" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 174
+[19-Apr-2025 05:16:32 UTC] PHP Warning:  Undefined array key "order" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 203
+[19-Apr-2025 05:16:32 UTC] PHP Warning:  Undefined array key "per_page" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 204
+[19-Apr-2025 05:16:32 UTC] PHP Warning:  Undefined array key "per_page" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 205
+[19-Apr-2025 05:17:04 UTC] PHP Warning:  Undefined array key "search_location" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 171
+[19-Apr-2025 05:17:04 UTC] PHP Warning:  Undefined array key "search_keywords" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 172
+[19-Apr-2025 05:17:04 UTC] PHP Warning:  Undefined array key "orderby" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 174
+[19-Apr-2025 05:17:04 UTC] PHP Warning:  Undefined array key "order" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 203
+[19-Apr-2025 05:17:04 UTC] PHP Warning:  Undefined array key "per_page" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 204
+[19-Apr-2025 05:17:04 UTC] PHP Warning:  Undefined array key "per_page" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 205
+[19-Apr-2025 05:18:13 UTC] PHP Warning:  Undefined array key "search_location" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 171
+[19-Apr-2025 05:18:13 UTC] PHP Warning:  Undefined array key "search_keywords" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 172
+[19-Apr-2025 05:18:13 UTC] PHP Warning:  Undefined array key "orderby" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 174
+[19-Apr-2025 05:18:13 UTC] PHP Warning:  Undefined array key "order" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 203
+[19-Apr-2025 05:18:13 UTC] PHP Warning:  Undefined array key "per_page" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 204
+[19-Apr-2025 05:18:13 UTC] PHP Warning:  Undefined array key "per_page" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 205
+[19-Apr-2025 05:22:21 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2059
+[19-Apr-2025 05:24:21 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2061
+[19-Apr-2025 05:28:51 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2067
+[19-Apr-2025 05:28:54 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2068
+[19-Apr-2025 05:31:30 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2069
+[19-Apr-2025 05:32:50 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2070
+[19-Apr-2025 05:32:51 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2072
+[19-Apr-2025 05:34:13 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2073
+[19-Apr-2025 05:37:37 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2077
+[19-Apr-2025 05:38:57 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2078
+[19-Apr-2025 05:38:58 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2079
+[19-Apr-2025 05:43:34 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2083
+[19-Apr-2025 05:43:37 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2084
+[19-Apr-2025 05:45:08 UTC] 🔄 Checking for events happening on: 2025-04-19
+[19-Apr-2025 05:45:08 UTC] 🚫 No registrations found for events today (2025-04-19).
+[19-Apr-2025 05:45:38 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2085
+[19-Apr-2025 05:48:32 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2088
+[19-Apr-2025 05:49:35 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2089
+[19-Apr-2025 05:53:46 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2094
+[19-Apr-2025 05:53:47 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2095
+[19-Apr-2025 05:55:33 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2096
+[19-Apr-2025 05:55:37 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2097
+[19-Apr-2025 06:05:08 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2102
+[19-Apr-2025 06:05:12 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2103
+[19-Apr-2025 06:05:12 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2104
+[19-Apr-2025 06:05:53 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2105
+[19-Apr-2025 06:11:58 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2106
+[19-Apr-2025 06:14:50 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2108
+[19-Apr-2025 06:16:36 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2112
+[19-Apr-2025 06:16:37 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2113
+[19-Apr-2025 06:17:35 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2114
+[19-Apr-2025 06:20:34 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2118
+[19-Apr-2025 06:21:58 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2119
+[19-Apr-2025 06:21:59 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2120
+[19-Apr-2025 06:41:26 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2122
+[19-Apr-2025 06:47:25 UTC] 🔄 Checking for events happening on: 2025-04-19
+[19-Apr-2025 06:47:25 UTC] 🚫 No registrations found for events today (2025-04-19).
+[19-Apr-2025 06:47:39 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2125
+[19-Apr-2025 06:48:16 UTC] PHP Warning:  Undefined array key "search_location" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 171
+[19-Apr-2025 06:48:16 UTC] PHP Warning:  Undefined array key "search_keywords" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 172
+[19-Apr-2025 06:48:16 UTC] PHP Warning:  Undefined array key "orderby" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 174
+[19-Apr-2025 06:48:16 UTC] PHP Warning:  Undefined array key "order" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 203
+[19-Apr-2025 06:48:16 UTC] PHP Warning:  Undefined array key "per_page" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 204
+[19-Apr-2025 06:48:16 UTC] PHP Warning:  Undefined array key "per_page" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 205
+[19-Apr-2025 06:48:20 UTC] PHP Warning:  Undefined array key "search_location" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 171
+[19-Apr-2025 06:48:20 UTC] PHP Warning:  Undefined array key "search_keywords" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 172
+[19-Apr-2025 06:48:20 UTC] PHP Warning:  Undefined array key "orderby" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 174
+[19-Apr-2025 06:48:20 UTC] PHP Warning:  Undefined array key "order" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 203
+[19-Apr-2025 06:48:20 UTC] PHP Warning:  Undefined array key "per_page" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 204
+[19-Apr-2025 06:48:20 UTC] PHP Warning:  Undefined array key "per_page" in C:\Users\micha\Local Sites\salem-events-hub-discover-local-happenings\app\public\wp-content\plugins\wp-event-manager\includes\wp-event-manager-ajax.php on line 205
+[19-Apr-2025 06:53:19 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 2126
