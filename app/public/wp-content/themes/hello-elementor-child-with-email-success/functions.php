@@ -706,6 +706,13 @@ function seh_user_avatar_shortcode() {
 add_shortcode('user_avatar', 'seh_user_avatar_shortcode');
 
 
+//redirect after registration
+add_filter('event_registration_redirect_url', 'seh_redirect_event_registration_success', 10, 2);
+function seh_redirect_event_registration_success($redirect_url, $event_id) {
+    // Redirect to same event page with success message
+    return add_query_arg('registration', 'success', get_permalink($event_id));
+}
+
 
 
 
