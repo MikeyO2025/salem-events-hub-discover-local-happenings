@@ -30,7 +30,7 @@ function handle_custom_event_registration() {
     $email = sanitize_email($_POST['reg_email']);
     $event_id = intval($_POST['event_id']);
 
-    // Fetch the event title
+    //Get the event title
     $post = get_post($event_id);
     $event_title = $post ? $post->post_title : 'Unknown Event';
 
@@ -48,7 +48,7 @@ function handle_custom_event_registration() {
         )"
     );
 
-    // Insert data including event_title
+    //Insert data
     $wpdb->insert($table, [
         'event_id' => $event_id,
         'name' => $name,
@@ -57,7 +57,7 @@ function handle_custom_event_registration() {
         'created_at' => current_time('mysql')
     ]);
 
-    // ✅ Personalized confirmation email to user
+    //Confirmation email to user
     $subject = '✅ Registration Confirmed: ' . $event_title;
     $event_start_raw = get_post_meta($event_id, '_event_start_date', true);
     $event_start = $event_start_raw ? date('l, F jS Y \a\t g:i A', strtotime($event_start_raw)) : 'TBD';
@@ -68,7 +68,7 @@ function handle_custom_event_registration() {
 
     wp_mail($email, $subject, $message, $headers);
 
-    // ✅ Notify both registration_email and organizer_email
+    //Notify both registration_email and organizer_email
     $registration_email = get_post_meta($event_id, '_registration', true);
 
     $organizer_ids = get_post_meta($event_id, '_event_organizer_ids', true);
@@ -96,41 +96,7 @@ function handle_custom_event_registration() {
 
 
 
-
-
-
-//old ish dont need anymore
-    //$name = sanitize_text_field($_POST['reg_name']);
-    //$email = sanitize_email($_POST['reg_email']);
-    //$event_id = intval($_POST['event_id']);
-
-    //global $wpdb;
-    //$table = $wpdb->prefix . 'event_custom_registrations';
-
-    //$wpdb->query(
-        //"CREATE TABLE IF NOT EXISTS $table (
-            //id BIGINT AUTO_INCREMENT PRIMARY KEY,
-            //event_id BIGINT,
-            //name VARCHAR(255),
-            //email VARCHAR(255),
-            //created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-        //)"
-    //);
-
-    //$wpdb->insert($table, [
-        //'event_id' => $event_id,
-        //'name' => $name,
-        //'email' => $email,
-        //'event_title' => $event_title,
-    //]);
-
-
-    
-
-
-
-//new ish 
-// Load FullCalendar CSS/JS
+//Load FullCalendar CSS/JS
 function load_fullcalendar_assets() {
     wp_enqueue_style('fullcalendar-css', 'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css');
     wp_enqueue_script('fullcalendar-js', 'https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js', array(), '6.1.8', true);
@@ -194,53 +160,6 @@ if (!function_exists('get_calendar_events')) {
         wp_send_json($events);
     }
 }
-
-
-//send email notification for events on the day they start
-//function send_event_reminder_emails() {
-//    global $wpdb;
-//
-//    $table = $wpdb->prefix . 'event_custom_registrations';
-//    $today = gmdate('Y-m-d'); // UTC date
-//
-//    error_log("🔄 Checking for events happening on: $today");
-//
-//    $registrations = $wpdb->get_results($wpdb->prepare("
-//        SELECT r.*, p.post_title, m.meta_value as event_start
-//        FROM {$table} r
-//        JOIN {$wpdb->prefix}posts p ON p.ID = r.event_id
-//        JOIN {$wpdb->prefix}postmeta m ON m.post_id = r.event_id
-//        WHERE m.meta_key = '_event_start_date'
-//       AND DATE(m.meta_value) = %s
-//        AND (r.reminder_sent IS NULL OR r.reminder_sent = 0)
-//    ", $today));
-//
-//    if (empty($registrations)) {
-//        error_log("🚫 No registrations found for events today ($today).");
-//        return;
-//    }
-
-//    error_log("📦 Found " . count($registrations) . " registration(s)");
-//    foreach ($registrations as $r) {
-//        $start_time = date('l, F jS Y \a\t g:i A', strtotime($r->event_start));
-//        $subject = "🔔 Reminder: {$r->post_title} is today!";
-//        $message = "Hi {$r->name},\n\nJust a quick reminder that you registered for \"{$r->post_title}\" happening today at {$start_time}.\n\nSee you there!\n\n— Salem Events Hub";
-//        $headers = ['Content-Type: text/plain; charset=UTF-8'];
-
-//        wp_mail($r->email, $subject, $message, $headers);
-//        $wpdb->update($table, ['reminder_sent' => 1], ['id' => $r->id]);
-
-//        error_log("📨 Reminder sent to: {$r->email} for event: {$r->post_title}");
-//    }
-
-//    error_log("✅ Reminder process completed at " . current_time('mysql'));
-//}
-
-//ish
-//if (!wp_next_scheduled('daily_event_email_reminders')) {
-//    wp_schedule_event(time(), 'daily', 'daily_event_email_reminders');
-//}
-//add_action('daily_event_email_reminders', 'send_event_reminder_emails');
 
 
 
@@ -308,9 +227,7 @@ if (!wp_next_scheduled('daily_event_email_reminders')) {
 add_action('daily_event_email_reminders', 'send_event_reminder_emails');
 
 
-//ahhh
-
-//4 1 25 google calendar ish
+//Add to google calendar button
 function seh_add_google_calendar_button_meta_section($event_id) {
     if (get_post_type($event_id) !== 'event_listing') return;
 
@@ -344,85 +261,7 @@ add_action('single_event_listing_meta_end', 'seh_add_google_calendar_button_meta
 
 
 
-//4 9 25 new syncing new events posted into wp_events
-//add_action('publish_event_listing', 'sync_event_listing_to_wp_events_full', 10, 2);
-
-//function sync_event_listing_to_wp_events_full($post_ID, $post) {
-//    global $wpdb;
-//
-    // Skip if already synced
-//    $exists = $wpdb->get_var($wpdb->prepare(
-//        "SELECT COUNT(*) FROM {$wpdb->prefix}events WHERE event_id = %d", $post_ID
-//    ));
-//    if ($exists) return;
-//
-//    $event_title    = $post->post_title;
-//    $event_date     = get_post_meta($post_ID, '_event_start_date', true) ?: current_time('mysql');
-//    $event_location = get_post_meta($post_ID, '_event_location', true) ?: 'TBD';
-
-    // Organizer info from postmeta (serialized array of post IDs)
-//    $organizer_ids = get_post_meta($post_ID, '_event_organizer_ids', true);
-//    $organizer_id = is_array($organizer_ids) ? reset($organizer_ids) : (int) $organizer_ids;
-
-//    $organizer_name  = 'SSU Organizer';
-//    $organizer_email = 'salemeventshub@gmail.com';
-
-//    if ($organizer_id) {
-        // Pull from wp_posts and wp_postmeta
-//        $post_obj = get_post($organizer_id);
- //       $email    = get_post_meta($organizer_id, '_organizer_email', true);
-
- //      if ($post_obj && $post_obj->post_type === 'event_organizer') {
-  //          $organizer_name  = $post_obj->post_title;
-  //          $organizer_email = $email ?: $organizer_email;
- //       }
-  //  }
-
-    // Default taxonomy labels
-//    $event_type     = 'Other';
- //   $event_category = 'General';
-
-    // Fetch taxonomy terms
-//    $terms = $wpdb->get_results($wpdb->prepare("
-//        SELECT t.name, tt.taxonomy
-//        FROM {$wpdb->prefix}term_relationships tr
-//        INNER JOIN {$wpdb->prefix}term_taxonomy tt ON tr.term_taxonomy_id = tt.term_taxonomy_id
-//        INNER JOIN {$wpdb->prefix}terms t ON t.term_id = tt.term_id
-//        WHERE tr.object_id = %d
-//    ", $post_ID));
-
-//    foreach ($terms as $term) {
-//        if ($term->taxonomy === 'event_listing_type') {
- //           $event_type = $term->name;
- //       } elseif ($term->taxonomy === 'event_listing_category') {
-//            $event_category = $term->name;
- //       }
-//    }
-
-    // Insert into wp_events
-//    $wpdb->insert(
-//        "{$wpdb->prefix}events",
- //       [
- //           'event_id'        => $post_ID,
-  //          'event_title'     => $event_title,
-  //          'event_date'      => $event_date,
-  //          'event_location'  => $event_location,
-  //          'event_type'      => $event_type,
-  //          'event_category'  => $event_category,
-  //          'organizer_id'    => $organizer_id,
-  //          'organizer_name'  => $organizer_name,
-  //          'organizer_email' => $organizer_email,
-  //      ]
- //   );
-//}
-
-
-
-
-
-
-
-//update to commented above 4 13 25
+//Syncing new events posted into wp_events
 add_action('publish_event_listing', 'sync_event_listing_to_wp_events_full', 10, 2);
 
 function sync_event_listing_to_wp_events_full($post_ID, $post) {
@@ -432,7 +271,7 @@ function sync_event_listing_to_wp_events_full($post_ID, $post) {
     $event_date     = get_post_meta($post_ID, '_event_start_date', true) ?: current_time('mysql');
 //    $event_location = get_post_meta($post_ID, '_event_location', true) ?: 'TBD';
 
-//new ish 4 13 replacing above to online isnt null    
+//Replacing above to online isnt null    
 
     $event_location = get_post_meta($post_ID, '_event_location', true);
 
@@ -445,7 +284,6 @@ function sync_event_listing_to_wp_events_full($post_ID, $post) {
         if (empty($event_location)) {
             $event_location = 'TBD';
         }
-//end newish 4 13
 
 
     // Organizer info
@@ -505,43 +343,7 @@ function sync_event_listing_to_wp_events_full($post_ID, $post) {
 }
 
 
-
-
-
-
-//commenting out below
-//4 9 25 trying to auto sync organizers into wp_organizers table
-// Queue organizer sync after full post save
-//add_action('save_post_event_organizer', function ($post_ID, $post, $update) {
-//    if ($post->post_status !== 'publish') return;
-
-    // Defer sync to after save is complete
-//    add_action('shutdown', function () use ($post_ID, $post) {
-//        global $wpdb;
-
-        // Avoid duplicates
-//        $exists = $wpdb->get_var($wpdb->prepare(
-//            "SELECT COUNT(*) FROM {$wpdb->prefix}event_organizers WHERE organizer_id = %d", $post_ID
-//        ));
-//        if ($exists) return;
-
-        // Now meta should be saved — grab it
-//        $organizer_email = get_post_meta($post_ID, '_organizer_email', true);
-//        if (empty($organizer_email)) {
-//            $organizer_email = 'unknown@unknown.com';
- //       }
-
-//        $wpdb->insert("{$wpdb->prefix}event_organizers", [
- //           'organizer_id'    => $post_ID,
- //           'organizer_name'  => $post->post_title,
-//            'organizer_email' => $organizer_email
-//        ]);
-//    });
-//}, 10, 3);
-
-
-
-//415 organizer updating 
+//Organizer adding and updating to table 
 add_action('save_post_event_organizer', function ($post_ID, $post, $update) {
     if ($post->post_status !== 'publish') return;
 
@@ -578,23 +380,18 @@ add_action('save_post_event_organizer', function ($post_ID, $post, $update) {
 
 
 
-
-
-
-
-//added stuff above this
-//add ish 41325 syncing user into user contact info
-// First, try WP Everest's hook
+//syncing user into user contact info
+//WP Everest hook
 add_action('user_registration_after_user_meta_update_action', 'seh_sync_user_contact_info_smart', 10, 2);
 
-// Fallback: if Everest doesn’t run, use WP's native user_register + shutdown
+//If Everest doesn’t run, WP's native user_register + shutdown
 add_action('user_register', function($user_id) {
     add_action('shutdown', function () use ($user_id) {
         seh_sync_user_contact_info_smart($user_id);
     });
 });
 
-// Unified sync function
+//Unified sync function
 function seh_sync_user_contact_info_smart($user_id, $form_data = null) {
     $user_info = get_userdata($user_id);
 
@@ -627,12 +424,7 @@ function seh_sync_user_contact_info_smart($user_id, $form_data = null) {
 }
 
 
-
-
-
-
-
-//add updates when users edit profile
+//Add updates when users edit profile
 add_action('profile_update', 'seh_update_user_contact_info_on_profile_edit', 10, 2);
 
 function seh_update_user_contact_info_on_profile_edit($user_id, $old_user_data) {
@@ -685,8 +477,7 @@ function seh_update_user_contact_info_on_profile_edit($user_id, $old_user_data) 
 
 
 
-
-//hide toolbar for all but admin
+//Hide toolbar for all but admin
 add_filter('show_admin_bar', function($show) {
     if (!current_user_can('administrator')) {
         return false;
@@ -695,7 +486,7 @@ add_filter('show_admin_bar', function($show) {
 });
 
 
-//show pic if logged in
+//show user profile pic next to search bar if logged in
 function seh_user_avatar_shortcode() {
     if (is_user_logged_in()) {
         $user = wp_get_current_user();
@@ -706,7 +497,7 @@ function seh_user_avatar_shortcode() {
 add_shortcode('user_avatar', 'seh_user_avatar_shortcode');
 
 
-//redirect after registration
+//redirect users after event registration
 add_filter('event_registration_redirect_url', 'seh_redirect_event_registration_success', 10, 2);
 function seh_redirect_event_registration_success($redirect_url, $event_id) {
     // Redirect to same event page with success message

@@ -45,13 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },
 
-    //events: function(fetchInfo, successCallback, failureCallback) {
-      //fetch('/wp-admin/admin-ajax.php', {
-        //method: 'POST',
-        //headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        //body: 'action=get_calendar_events'
-      //})
-
 
       events: function(fetchInfo, successCallback, failureCallback) {
     const eventType = document.querySelector('[name="event_type"]')?.value || '';
